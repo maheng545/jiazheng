@@ -1,0 +1,34 @@
+<view>
+  <input type="text" placeholder="清晰明确的标题更吸引人哦" class="jiesao" />
+  <textarea class="biaozhun" placeholder="请填写您的收费标准，服务内容，服务流程，服务保证等。详细的介绍可以吸引更多客户下单。"></textarea>
+  <view class="shoufei">
+    <view class="shoufei_view">
+      <text class="text1">服务收费</text>
+      <text class="text2">去编辑 ></text>
+    </view>
+  </view>
+  <view class="neirong">
+    <view class="shangmen_text">
+      <button class="shangmen">上门服务</button>
+      <text class="daodian">到店服务</text>
+      <text class="zaixian">在线服务</text>
+    </view>
+   
+  </view>
+   <view class="fanwei_view">
+   <text class="text3">服务范围</text>
+  </view>
+  
+   <view class="lijishangmen">
+   <text class="text4">支持立即上门</text>
+   <radio-group class="danxuan">
+  <radio ></radio>
+  </radio-group>
+  </view>
+  <!-- 按钮 -->
+<view class='add_btn'>
+ <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
+ <button class='btn'>确认发布</button>
+</navigator>
+</view>
+</view>

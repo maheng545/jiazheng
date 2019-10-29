@@ -1,0 +1,192 @@
+.zhuyi{
+  height: 130rpx;
+   background: rgba(255, 255, 0, 0.24);
+}
+.zhuyi_text{
+  font-size: 25rpx;
+margin-left: 10rpx;
+margin-top:30rpx;
+position: absolute;
+}
+.tianxie{
+  height: 120rpx;
+
+}
+.text1{
+  font-size: 35rpx;
+  position: absolute;
+  margin-top:35rpx;
+  margin-left: 10rpx;
+}
+.text2{
+  font-size: 30rpx;
+  position: absolute;
+  margin-top:35rpx;
+  margin-left: 500rpx;
+  color:red;
+}
+.daneirong{
+  height:900rpx;
+   border: 1rpx solid rgba(128, 128, 128, 0.068);
+background: rgba(128, 128, 128, 0.068);
+}
+.xiangmu{
+  height: 250rpx;
+  background: white;
+  
+  margin-top:20rpx;
+}
+.text3{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 60rpx;
+    margin-top:20rpx;
+}
+.text4{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 400rpx;
+    margin-top:20rpx;
+}
+.text5{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 550rpx;
+    margin-top:20rpx;
+}
+.xiangmu_input{
+  background: rgba(128, 128, 128, 0.068);
+ position: absolute;
+  font-size: 28rpx;
+  margin-left: 50rpx;
+    margin-top:75rpx;
+    border-radius:10rpx;
+    height: 130rpx; 
+    width:300rpx;
+        text-align: center;
+
+}
+.price_input{
+  background: rgba(128, 128, 128, 0.068);
+ position: absolute;
+  font-size: 28rpx;
+  margin-left: 370rpx;
+    margin-top:75rpx;
+    border-radius:10rpx;
+    height: 130rpx; 
+    width:130rpx;
+    text-align: center;
+}
+.jijia_input{
+background: rgba(128, 128, 128, 0.068);
+ position: absolute;
+  font-size: 28rpx;
+  margin-left: 530rpx;
+    margin-top:75rpx;
+    border-radius:10rpx;
+    height: 130rpx; 
+    width:170rpx;
+    text-align: center;
+}
+.beizhu{
+   height: 350rpx;
+  background: white;
+  
+  margin-top:20rpx;
+}
+.text6{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left:20rpx;
+  margin-top:20rpx;
+}
+.beizhu_textarea{
+  font-size: 30rpx;
+  width: 98%;
+  height: 250rpx;
+  position: absolute;
+  margin-top:80rpx;
+  font-weight: 100;
+  margin-left:10rpx; 
+}
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+border-top:0.5rpx solid gray;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#e63c3c;  
+color: #fff;  
+margin-top:10rpx;
+}
+.tanchu{
+height: 200rpx;   
+
+margin-top:10rpx;
+background: white;
+
+}
+.text_7{
+  position: absolute;
+  font-size: 30rpx;
+  color:red;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.text_8{
+   position: absolute;
+  font-size: 30rpx;
+  color:black;
+  margin-top: 20rpx;
+  margin-left: 260rpx;
+  font-weight: 600;
+}
+.text_9{
+    position: absolute;
+  font-size: 30rpx;
+  color:red;
+  margin-top: 20rpx;
+  margin-left: 650rpx;
+}
+/*  重写 radio 样式  */
+/* 未选中的 背景样式 */
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:35rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: red;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.danxuan{
+  position: absolute;
+   margin-left: 100rpx;
+margin-top:100rpx;  
+}
+.mi{
+  margin-left: 50rpx;
+}
+.ge{
+  margin-left: 50rpx;
+}

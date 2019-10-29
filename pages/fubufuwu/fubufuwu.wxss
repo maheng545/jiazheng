@@ -1,0 +1,96 @@
+image{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+text{
+  font-size: 30rpx;
+  margin-top:50rpx; 
+}
+navigator{
+  float: left;
+  
+}
+.huoyun{
+  margin-left:100rpx; 
+}
+.huoyun text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-75rpx; 
+}
+.baojie{
+  margin-left:150rpx; 
+}
+.baojie text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-115rpx; 
+}
+.yuesao{
+  margin-left:150rpx; 
+}
+.yuesao text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-75rpx; 
+}
+.qingjie{
+  margin-left:100rpx; 
+  margin-top:100rpx;
+}
+.qingjie text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-100rpx; 
+}
+.banjia{
+  margin-left:150rpx; 
+    margin-top:100rpx;
+
+}
+.banjia text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-75rpx; 
+}
+.fangwu{
+  margin-left:150rpx; 
+    margin-top:100rpx;
+
+}
+.fangwu text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-100rpx; 
+}
+/*  */
+.jiadian{
+  margin-left:100rpx; 
+  margin-top:100rpx;
+}
+.jiadian text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-100rpx; 
+}
+.shangmen{
+  margin-left:150rpx; 
+    margin-top:100rpx;
+
+}
+.shangmen text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-110rpx; 
+}
+.shuma{
+  margin-left:150rpx; 
+    margin-top:100rpx;
+
+}
+.shuma text{
+  position: absolute;
+  margin-top:100rpx;
+  margin-left:-100rpx; 
+}

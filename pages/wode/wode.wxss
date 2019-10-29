@@ -1,0 +1,37 @@
+.user_view{
+  width:98%;
+  height:200rpx;
+  border:1px solid red;
+  margin-left:1%; 
+}
+.gongneng{
+  width:96%;
+  height:900rpx;
+ background:#ffffff;
+  margin-left:4%; 
+  
+}
+.gongneng image{
+  width:50rpx;
+  height:50rpx;
+  position: absolute;
+  margin-top: 35rpx;
+  
+}
+.gongneng text{
+  font-size:15px;
+  color:black;
+  margin-left:80rpx;
+    position: absolute;
+  margin-top: 40rpx;
+}
+.gongneng navigator{
+  border-bottom: 0.2rpx dashed rgba(128, 128, 128, 0.329);
+  height:130rpx;
+}
+.tuichu button{
+  width:96%;
+  height:80rpx;
+  background: #ffffff;
+  font-size: 15px;
+}

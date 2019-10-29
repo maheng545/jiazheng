@@ -1,0 +1,151 @@
+.jiesao{
+  height: 100rpx;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+  font-size: 30rpx;
+  color:rgba(219, 212, 212, 0);
+  width: 97%;
+ 
+  margin-left: 2%;
+}
+.biaozhun{
+
+color:rgba(219, 212, 212, 0);
+ font-size: 30rpx;
+  width: 97%;
+  margin-left: 2%;
+}
+.shoufei{
+  height: 150rpx;
+  border: 1rpx solid  rgba(128, 128, 128, 0.055);
+    background: rgba(128, 128, 128, 0.055);
+}
+.shoufei_view{
+  background:white;
+  height: 100rpx;
+margin-top:25rpx;
+}
+.text1{
+  font-size: 35rpx;
+  position: absolute;
+  margin-top:20rpx; 
+   margin-left: 2%;
+
+}
+.text2{
+   font-size: 30rpx;
+  position: absolute;
+  margin-top:27rpx; 
+   margin-left: 600rpx;
+   color:rgba(128, 128, 128, 0.616);
+}
+.neirong{
+  height: 120rpx;
+
+}
+.shangmen_text{
+  width:650rpx;
+  height: 90rpx;
+    border: 1rpx solid rgba(65, 62, 62, 0.178);
+position: absolute;
+margin-left: 50rpx;
+ margin-top:27rpx; 
+ border-radius:50ch; 
+}
+.shangmen_text text{
+  font-size: 30rpx;
+}
+.shangmen{
+  width:180rpx;
+  height: 70rpx;
+  
+  float: left;
+  font-size: 29rpx;
+   border-radius:50ch; 
+   position: absolute;
+   margin-left: 30rpx;
+    margin-top:10rpx; 
+    color:white;
+    background: #e63c3c;
+
+}
+.daodian{
+ 
+  margin-left: 270rpx;
+  position: absolute;
+  margin-top:30rpx;
+color:rgba(65, 62, 62, 0.527);
+}
+.zaixian{
+ 
+  margin-left: 470rpx;
+  position: absolute;
+  margin-top:30rpx;
+color:rgba(65, 62, 62, 0.527);
+}
+.fanwei_view{
+  height: 100rpx;
+  margin-top:25rpx;
+  border-bottom:1rpx solid rgba(128, 128, 128, 0.247);
+}
+.text3{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  margin-top:20rpx;
+}
+.lijishangmen{
+  height: 100rpx;
+   border-bottom:1rpx solid rgba(128, 128, 128, 0.247);
+}
+.text4{
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  margin-top:20rpx;
+}
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+border-top:0.5rpx solid gray;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#e63c3c;  
+color: #fff;  
+margin-top:10rpx;
+}
+/*  重写 radio 样式  */
+/* 未选中的 背景样式 */
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:35rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: red;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.danxuan{
+  position: absolute;
+  margin-left: 650rpx;
+margin-top:20rpx; 
+}

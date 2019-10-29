@@ -1,0 +1,96 @@
+
+.baojie_text{
+  position: absolute;
+  margin-top:80rpx;
+  margin-left: 80rpx;
+  color: #ff6666; 
+  font-size: 40rpx;
+  
+}
+.baojie_view{
+  height: 130rpx;
+}
+.baojie_button{
+  height: 120rpx;
+}
+.baojie_button button{
+  float: left;
+  font-size: 30rpx;
+  width:205rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: rgba(128, 128, 128, 0.055);
+  border: 1px solid gba(128, 128, 128, 0.055);
+  font-weight: 300;
+}
+.richang{
+  margin-left: 80rpx;
+}
+.shendu{
+  margin-left: 20rpx;
+}
+.kaihuang{
+  margin-left: 20rpx;
+}
+.jiadian_view{
+  height: 70rpx;
+}
+.jiadian_text{
+  position: absolute;
+  margin-left: 80rpx;
+  color: #ff6666; 
+  font-size: 40rpx;
+}
+.jiadian_button{
+  height: 240rpx;
+}
+.jiadian_button button{
+  float: left;
+  font-size: 30rpx;
+  width:205rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: rgba(128, 128, 128, 0.055);
+  border: 1px solid gba(128, 128, 128, 0.055);
+   font-weight: 300;
+}
+.youyanji{
+  margin-left: 80rpx;
+}
+.bingxiang{
+   margin-left: 20rpx;
+}
+.xiyiji{
+   margin-left: 20rpx;
+}
+.kongtiao{
+   margin-left: 80rpx;
+}
+.jiating_view{
+  height: 70rpx;
+}
+.jiating_text{
+  position: absolute;
+  margin-left: 80rpx;
+  color: #ff6666; 
+  font-size: 40rpx;
+}
+.jiatng_button{
+  height: 240rpx;
+}
+.jiating_button button{
+  float: left;
+  font-size: 30rpx;
+  width:205rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: rgba(128, 128, 128, 0.055);
+  border: 1px solid gba(128, 128, 128, 0.055);
+   font-weight: 300;
+}
+.caboli{
+  margin-left:80rpx; 
+}
+.chuchen{
+  margin-left: 20rpx;
+}

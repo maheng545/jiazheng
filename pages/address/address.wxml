@@ -1,0 +1,14 @@
+<view class="address_view">
+<!-- 地址信息 -->
+<view class="address">
+<text class="address_text_dizhi">新乡职业技术学院四号楼</text>
+<text class="address_text_name">梁松涛 15565792719</text>
+<navigator url="../xiugai_address/xiugai_address" open-type="navigate"  hover-class="none"><image src="/image/bianji.png" ></image></navigator>
+</view>
+<!-- 按钮 -->
+<view class='add_btn'>
+ <navigator url="../xinzeng_address/xinzeng_address"open-type="navigate"hover-class="none"> 
+ <button class='btn'>+ 添加新地址</button>
+</navigator>
+</view>
+</view>

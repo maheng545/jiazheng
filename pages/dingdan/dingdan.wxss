@@ -1,0 +1,16 @@
+.dingdan_view{
+  height:1100rpx;
+    background-color: rgba(128, 128, 128, 0.103);
+
+}
+.dingdan_text{
+  font-size: 30rpx;
+  position: absolute;
+  margin-left:300rpx;
+  margin-top:25rpx;
+}
+.dingdan{
+height: 80rpx;
+ background: white;
+ border-top:1rpx solid  rgba(128, 128, 128, 0.397);
+}

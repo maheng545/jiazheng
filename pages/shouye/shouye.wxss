@@ -1,0 +1,207 @@
+.slide-image{
+  border-radius: 5px;
+  width:98%;
+  height:260rpx;
+  margin-left: 1%;
+}
+.huodong_image{
+  width:70rpx;
+  height:70rpx;
+  border-radius: 50ch;
+}
+.huodong text{
+font-size:13px;
+margin-left: -15rpx;
+}
+.huodong{
+  width: 98%;
+  height: 80px;
+ 
+  margin-top:30rpx;
+}
+.huodong view{
+  margin-left:20rpx;
+}
+.remen_text{
+  font-size:15px;
+  color:black;
+  font-weight: bold;
+  margin-left:1%;
+margin-top: 20rpx;
+}
+.remen_view{
+  
+  margin-top: 20rpx;
+}
+.remen_url{
+
+  width:98%;
+  height:190rpx;
+  margin-left:1%;
+  margin-top: 20rpx;
+ 
+}
+.remen_image{
+  width:315rpx;
+  height:185rpx;
+  float:left;
+  
+}
+.baojie_text{
+  font-size:15px;
+  color:black;
+  font-weight: bold;
+  margin-left:1%;
+margin-top: 20rpx;
+
+}
+.baojie_view{
+  
+  margin-top: 30rpx;
+}
+.baojie_neirong{
+  width:98%;
+  height:300rpx;
+  margin-top:20rpx;
+}
+.tuijian_text{
+  font-size:15px;
+  color:black;
+  font-weight: bold;
+  margin-left:1%;
+margin-top: 20rpx;
+
+}
+.tuijian_view{
+  
+  margin-top: 30rpx;
+}
+.fuwu_image{
+  width:150px;
+  height:130px;
+}
+.baojie{
+  position: absolute;
+  
+  left:160px;
+  
+}
+.baojie_jieshao{
+  position: absolute;
+  left:160px;
+  margin-top:30px;
+  font-size:13px;
+  color:darkgray;
+}
+.baojie_price{
+  position: absolute;
+  left:160px;
+  margin-top:105px;
+  font-size:20px;
+  color: red;
+}
+.baojie_yuanqi{
+   position: absolute;
+  left:185px;
+  margin-top:110px;
+  font-size:15px;
+  color: red;
+}
+
+.youyanji{
+  position: absolute;
+  
+  left:160px;
+  
+}
+.youyanji_jieshao{
+  position: absolute;
+  left:160px;
+  margin-top:30px;
+  font-size:13px;
+  color:darkgray;
+}
+.youyanji_price{
+  position: absolute;
+  left:160px;
+  margin-top:105px;
+  font-size:20px;
+  color: red;
+}
+.youyanji_yuanqi{
+   position: absolute;
+  left:196px;
+  margin-top:110px;
+  font-size:15px;
+  color: red;
+}
+
+.boli{
+  position: absolute;
+  
+  left:160px;
+  
+}
+.boli_jieshao{
+  position: absolute;
+  left:160px;
+  margin-top:30px;
+  font-size:13px;
+  color:darkgray;
+}
+.boli_price{
+  position: absolute;
+  left:160px;
+  margin-top:105px;
+  font-size:20px;
+  color: red;
+}
+.boli_yuanqi{
+   position: absolute;
+  left:183px;
+  margin-top:110px;
+  font-size:15px;
+  color: red;
+}
+.richang_image{
+  border-radius: 5px;
+  width:150px;
+  height:130px;
+}
+.youyanji_image{
+  border-radius: 5px;
+  width:150px;
+  height:130px;
+}
+.boli_image{
+  border-radius: 5px;
+  width:150px;
+  height:130px;
+}
+.navigator-hover{
+  background: white;
+}
+.bianli{
+  width:140rpx;
+  height: 140rpx;
+  float: left;
+}
+.bianli image{
+width:85rpx;
+height:80rpx;
+
+}
+.bianli text{
+font-size:25rpx;
+color:rgba(0, 0, 0, 0.795);
+position: absolute;
+margin-top:93rpx; 
+margin-left:-95rpx; 
+
+}
+.bianli .navigator{
+  float: left;
+margin-left:40rpx;
+margin-top:10rpx;
+}
+

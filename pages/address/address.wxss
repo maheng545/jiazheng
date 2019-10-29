@@ -1,0 +1,44 @@
+.address_view{
+   margin-top:50rpx;
+}
+.address{
+  height: 150rpx;
+  border-bottom:1rpx solid rgba(128, 128, 128, 0.473);
+ 
+}
+.address_text_dizhi{
+  font-size:30rpx;
+  position: absolute;
+  margin-top: 40rpx;
+  margin-left:30rpx;
+}
+.address_text_name{
+   font-size:27rpx;
+  position: absolute;
+  margin-top: 80rpx;
+  margin-left:30rpx;
+  color: rgba(128, 128, 128, 0.637);
+}
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#fff;  
+color: rgba(0, 0, 0, 0.699);  
+margin-top:10rpx;
+}
+.address image{
+  width:45rpx;
+  height: 45rpx;
+  position: absolute;
+  margin-left: 670rpx;
+  margin-top:55rpx;
+}
+

@@ -1,0 +1,96 @@
+.login_view{
+  height:500rpx;
+ }
+.user_view{
+  height:90rpx;
+  width:580rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.568);
+  border-radius:50ch; 
+  float: left;
+  margin-top:150rpx; 
+margin-left:80rpx;
+}
+.pwd_view{
+  height:90rpx;
+  width:580rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.568);
+  border-radius:50ch; 
+  clear:both;
+  
+margin-left:80rpx;
+position: absolute;
+margin-top: 250rpx;
+}
+.user{
+  height:90rpx;
+  width:450rpx;
+font-size: 30rpx;
+margin-left:10rpx; 
+
+}
+.pwd{
+height:90rpx;
+width:250rpx;
+font-size: 30rpx;
+float: left;
+
+}
+.shouji{
+height:45rpx;
+width:45rpx;
+float: left;
+margin-left:30rpx;
+margin-top:20rpx;  
+}
+.yanzhengma{
+height:60rpx;
+ width:60rpx;
+float: left;
+margin-left:30rpx;
+margin-top:11rpx;  
+}
+.btn{
+ height:60rpx;
+ width:180rpx;
+ font-size:25rpx;
+ color:rgba(128, 128, 128, 0.74);
+margin-top:10rpx;
+border:1rpx solid white;
+background: white;
+}
+.login_btn{
+  width:580rpx;
+  height: 90rpx;
+  border-radius:54ch; 
+  background: #ff6666;
+  color:white;
+
+  position: absolute;
+margin-top: 400rpx;
+margin-left:80rpx; 
+}
+.weixin{
+ height:400rpx;
+}
+.text{
+  font-size: 30rpx;
+  color:gray;
+  margin-left: 260rpx;
+  position: absolute;
+  margin-top:150rpx;
+}
+.weixin_image{
+  width:110rpx;
+  height: 105rpx;
+  position: absolute;
+  margin-top:210rpx;
+ margin-left: 290rpx;
+
+}
+.weixin_text{
+  font-size: 30rpx;
+   color:gray;
+     position: absolute;
+  margin-top:330rpx;
+ margin-left: 290rpx;
+}

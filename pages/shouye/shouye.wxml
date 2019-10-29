@@ -1,0 +1,76 @@
+<!--图片轮播-->
+<view>
+ <swiper indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+         <block wx:for="{{imgUrls}}" wx:key="">  
+           <swiper-item>  
+              <navigator url="{{item.link}}" hover-class="navigator-hover">  
+               <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+              </navigator>  
+           </swiper-item>  
+         </block>  
+ </swiper>  
+ </view>
+ <!--活动-->
+ <view  class="huodong">
+ <view style="float:left;margin-left:95rpx">
+    
+    <navigator url="/pages/wode/wode" open-type="switchTab"  hover-class="none"><image src="/image/youhui2.png" class="huodong_image"></image></navigator>
+    <text>新人专享</text>
+    </view>
+    <view style="float:left;margin-left:80rpx">
+       <navigator url="/pages/wode/wode" open-type="switchTab"  hover-class="none"><image src="/image/woshi4.png" class="huodong_image"></image></navigator>
+      <text>卧室深度</text>
+   </view> 
+    <view style="float:left;margin-left:80rpx">
+          <navigator url="/pages/wode/wode" open-type="switchTab"  hover-class="none"><image src="/image/choujiang.png" class="huodong_image"></image></navigator>
+         <text> 每日抽奖</text>
+       </view>
+       
+        <view style="float:left;margin-left:80rpx">
+             <navigator url="/pages/wode/wode" open-type="switchTab"  hover-class="none"><image src="/image/discount.png" class="huodong_image"></image></navigator>
+   <text>  69折起</text>
+   </view>
+   
+    </view>
+    <!--热门服务-->
+    <view class="remen_view">
+    <text class="remen_text">热门服务</text>
+    </view>
+    <!--热门服务类型-->
+    <view class="remen_url">
+ 
+      <navigator url="../goumai/goumai" open-type="navigate" hover-class="none"><image src="/image/5.png" class="remen_image"style="margin-left:30rpx"></image></navigator>
+
+      <navigator url="" hover-class="none"><image src="/image/6.png" class="remen_image" style="margin-left:50rpx"></image></navigator>
+    </view>
+    <!--保洁范围标题-->
+     <view class="baojie_view">
+    <text class="baojie_text">家居家电清洗</text>
+    </view>
+    <!--保洁范围内容-->
+    <view  class="baojie_neirong">
+      <view class="bianli" wx:for="{{date}}" wx:key="">
+       <view class="navigator"bindtap="dianji"data-name="{{item.p_name}}" data-id="{{item.p_id}}"><image src="/image/{{item.p_url}}"></image>
+        <text>{{item.p_name}}</text>
+       </view>
+      
+      </view>
+    </view>
+    <!--推荐服务-->
+    <view class="tuijian_view">
+    <text class="tuijian_text">推荐服务</text>
+    </view>
+<!-- 服务内容 -->
+    <view style="width:98%;height:130px;margin-top:15px;margin-left:1%">
+    <navigator url="../baojie/baojie"open-type="navigate"hover-class="none"><image src="/image/2.png" class="richang_image"></image><text class="baojie">日常保洁</text><text class="baojie_jieshao">提供家庭室内表面清洁服务</text><text class="baojie_price">50</text><text class="baojie_yuanqi">元起</text></navigator>
+       
+    </view>
+
+     <view style="width:98%;height:130px;margin-top:15px;margin-left:1%">
+      <navigator url=""hover-class="none"><image src="/image/3.png" class="youyanji_image"></image><text class="youyanji">油烟机清洗</text><text class="youyanji_jieshao">22项清洗要点，深度除菌消毒</text><text class="youyanji_price">180</text><text class="youyanji_yuanqi">元起</text></navigator>
+     </view>
+      <view style="width:98%;height:130px;margin-top:15px;margin-left:1%">
+       <navigator url=""hover-class="none"><image src="/image/4.png" class="boli_image"></image><text class="boli">擦玻璃</text><text class="boli_jieshao">对内外部玻璃进行清洗除垢，含窗框，窗槽</text><text class="boli_price">17</text><text class="boli_yuanqi">元/平起</text></navigator>
+      </view>
+

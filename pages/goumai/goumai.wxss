@@ -1,0 +1,122 @@
+.quanju{
+  background-color: rgba(128, 128, 128, 0.089);
+}
+.address{
+  width:100%;
+  height:200rpx;
+}
+.address image{
+   width:100%;
+  height:200rpx;
+}
+.mianji{
+   width:100%;
+  height:100rpx;
+  margin-top:20rpx;
+  background-color: white;
+}
+.mianji input{
+  margin-left:550rpx;
+ position: absolute;
+  margin-top:25rpx;
+  font-size:30rpx;
+  color:black;
+  border: 1px solid #f8f8ff;
+  background-color: #f8f8ff;
+  width:100rpx;
+  height:50rpx;
+  text-align: center;
+}
+.pingmi{
+   margin-left:660rpx;
+ font-size: 30rpx;
+  position: absolute;
+   margin-top:28rpx;
+}
+.fuwumianji{
+  position: absolute;
+  margin-top:30rpx;
+ 
+}
+.shijian{
+   width:100%;
+  height:100rpx;
+  margin-top:20rpx;
+   background-color: white;
+}
+.fuwushijian{
+  position: absolute;
+  margin-top:30rpx;
+}
+.xuanzeshijian{
+  margin-left:600rpx;
+ font-size: 30rpx;
+  position: absolute;
+   margin-top:28rpx;
+   color:gray;
+}
+.tishi{
+height:680rpx;
+background-color: rgba(128, 128, 128, 0.089);
+}
+.tishi text{
+  color:gray;
+}
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+border-top:0.5rpx solid gray;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#ff6666;  
+color: #fff;  
+margin-top:10rpx;
+}
+.shijian_view{
+  height:1020rpx;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top:200rpx;
+  z-index: 100;
+  
+}
+.shouhang{
+  height: 80rpx;
+}
+
+.shouhang_text{
+  font-size: 33rpx;
+  margin-left: 40%;
+    position: absolute;
+margin-top: 10rpx;
+   
+}
+.shouhang_text_quxiao{
+  font-size: 33rpx;
+  color:rgba(128, 128, 128, 0.726);
+  position: absolute;
+  margin-left:50rpx;
+  margin-top: 12rpx;
+}
+.shouhang_text_queding{
+  font-size: 33rpx;
+  color:#ff6666;
+  position: absolute;
+  margin-left:650rpx;
+  margin-top: 12rpx;
+
+}
+.bg1{
+  display:none;
+}
+.bg2{
+  display: block;
+}
+

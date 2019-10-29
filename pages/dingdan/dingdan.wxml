@@ -1,0 +1,6 @@
+<view class="dingdan_view">
+<!-- 全部订单 -->
+<view class="dingdan">
+<text class="dingdan_text">全部订单</text>
+</view>
+</view>

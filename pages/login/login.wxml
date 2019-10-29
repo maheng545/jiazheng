@@ -1,0 +1,23 @@
+<view>
+<view class="login_view">
+
+<view class="user_view">
+<image src="/image/shouji.png"class="shouji"></image>
+<input type="text" class="user" placeholder="请输入手机号"/></view>
+<view class="pwd_view">
+<image src="/image/yanzhengma.png"class="yanzhengma"></image>
+
+<input type="text" class="pwd" placeholder="验证码"/>
+   <button class="btn">获取验证码</button>
+</view>
+ <button class="login_btn">登录</button>
+ </view>
+ <!-- 微信登录 -->
+ <view class="weixin"> 
+  <text class="text">使用第三方登录</text>
+  <navigator>
+  <image src="/image/weixin2.png"class="weixin_image"></image>
+<text class="weixin_text">微信登录</text>
+  </navigator>
+ </view>
+</view>

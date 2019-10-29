@@ -1,0 +1,58 @@
+{
+  "pages": [
+    
+    "pages/shouye/shouye",
+    "pages/dingdan/dingdan",
+    "pages/wode/wode",
+    "pages/baojie/baojie",
+    "pages/goumai/goumai",
+    "pages/add_address/add_address",
+    "pages/yuyuedingdan/yuyuedingdan",
+    "pages/zhifu/zhifu",
+    "pages/address/address",
+    "pages/xiugai_address/xiugai_address",
+    "pages/xinzeng_address/xinzeng_address",
+    "pages/login/login",
+    "pages/aaa/aaa",
+    "pages/ruzhu/ruzhu",
+    "pages/fubufuwu/fubufuwu",
+    "pages/leibie/leibie",
+    "pages/fuwuxiangqing/fuwuxiangqing",
+    "pages/price/price"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新职家政服务",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff0000",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "/image/home-xian2.png",
+        "iconPath": "/image/home-xian.png",
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/image/qinzihuodong2.png",
+        "iconPath": "/image/qinzihuodong.png",
+        "pagePath": "pages/dingdan/dingdan",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "/image/account2.png",
+        "iconPath": "/image/account.png",
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

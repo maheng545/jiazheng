@@ -1,0 +1,24 @@
+.img_1{
+height: 700rpx;
+width: 100%;
+}
+.img_2{
+height: 800rpx;
+width: 100%;
+}
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+border-top:0.5rpx solid gray;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#ee4242;  
+color: #fff;  
+margin-top:10rpx;
+}

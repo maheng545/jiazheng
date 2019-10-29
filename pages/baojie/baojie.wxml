@@ -1,0 +1,30 @@
+<view class="baojie">
+<image src="/image/b1.jpg" class="baojie_image1"></image>
+
+
+<!-- 服务价格 -->
+<view class="baojie_price">
+    <view class="table">
+      <view class="tr">
+       <view class="th">服务项目</view>
+       <view class="th">服务价格</view>
+      </view>
+      <view class="tr" wx:for="{{date}}" wx:key="">
+       <view class="td">{{item.p_name}}</view>
+       <view class="td">{{item.p_price}}元/平米(10平米起)</view>
+      </view>
+    </view>
+</view>
+<image src="/image/b2.jpg" class="baojie_image2"></image>
+ <image src="/image/b3.jpg" class="baojie_image3"></image>
+<image src="/image/b4.jpg"class="baojie_image4"></image>
+<image src="/image/b5.jpg"class="baojie_image5"></image>
+<image src="/image/b6.jpg"class="baojie_image6"></image>
+<image src="/image/b7.jpg"class="baojie_image6"></image>
+<!-- 按钮 -->
+<view class='add_btn'>
+ <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
+ <button class='btn'>立即购买</button>
+</navigator>
+</view>
+</view>

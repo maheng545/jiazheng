@@ -1,0 +1,45 @@
+<view style="margin-top:50rpx;">
+  <navigator class="huoyun">
+    <image src="/image/huoyun.png"></image>
+    <text>货运</text>
+  </navigator>
+
+  <navigator class="baojie">
+    <image src="/image/xiaoshigong.png"></image>
+    <text>保洁小时工</text>
+  </navigator>
+
+  <navigator class="yuesao">
+    <image src="/image/yuesao.png"></image>
+    <text>月嫂</text>
+  </navigator>
+
+ <navigator class="qingjie">
+    <image src="/image/baoyang.png"></image>
+    <text>清洁保养</text>
+  </navigator>
+
+  <navigator class="banjia">
+    <image src="/image/banjia.png"></image>
+    <text>搬家</text>
+  </navigator>
+
+  <navigator class="fangwu">
+    <image src="/image/fangwuweixiu.png"></image>
+    <text>房屋维修</text>
+  </navigator>
+   <navigator class="jiadian">
+    <image src="/image/jiadianweixiu.png"></image>
+    <text>家电维修</text>
+  </navigator>
+
+  <navigator class="shangmen">
+    <image src="/image/shangmenanzhuang.png"></image>
+    <text>上门安装</text>
+  </navigator>
+
+  <navigator class="shuma">
+    <image src="/image/shumaweixiu.png"></image>
+    <text>数码维修</text>
+  </navigator>
+</view>

@@ -1,0 +1,26 @@
+<view class="zhifu">
+<!-- 支付剩余时间 -->
+<view class="shijian">
+<text class="text">支付剩余时间</text>
+</view>
+<!-- 价钱 -->
+<view class="price">
+<text class="price_text">￥105</text>
+</view>
+<!-- 微信支付 -->
+<view class="weixin">
+<image src="/image/weixin.png"></image>
+<text class="zhifu_text">微信支付</text>
+<text class="tuijian_text">推荐安装微信5.0及以上的版本使用</text>
+<radio-group class="danxuan">
+  <radio checked="checked"></radio>
+  </radio-group>
+</view>
+<!-- 按钮 -->
+<view class='add_btn'>
+
+ <navigator url="../add_address/add_address"open-type="navigate"hover-class="none"> 
+ <button class='btn'>立即支付￥105</button>
+</navigator>
+</view>
+</view>

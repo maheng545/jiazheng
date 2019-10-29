@@ -1,0 +1,84 @@
+
+.baojie_price{
+  width:750rpx;
+  height:220rpx;
+}
+.baojie_image1{
+  height:770rpx;
+  width: 750rpx;
+}
+.baojie_image2{
+  height:800rpx;
+  width: 750rpx;
+}
+.baojie_image3{
+  height:800rpx;
+  width: 750rpx;
+  margin-top:-12rpx;
+}
+.baojie_image4{
+  height:800rpx;
+  width: 750rpx;
+  margin-top:-12rpx;
+}
+.baojie_image5{
+  height:800rpx;
+  width: 750rpx;
+}
+.baojie_image6{
+  height:800rpx;
+  width: 750rpx;
+    margin-top:-12rpx;
+}
+.baojie_image7{
+  height:800rpx;
+  width: 750rpx;
+    margin-top:-12rpx;
+}
+
+.add_btn{  
+ width: 100%;  
+ position: fixed;   
+bottom: 0rpx;
+border-top:0.5rpx solid gray;
+background:#fff;  
+z-index: 30;
+height:120rpx;
+}
+.btn{   
+
+width: 700rpx;   
+background:#ff6666;  
+color: #fff;  
+margin-top:10rpx;
+}
+.table{
+  height:130rpx;
+  width:600rpx; 
+  position: absolute;
+  margin-left:90rpx; 
+  margin-top: 50rpx;
+}
+.tr{
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.th{
+  font-size: 30rpx;
+  font-weight: 800;
+  background: rgba(128, 128, 128, 0.178);
+  height: 50rpx;
+   text-align: center;
+
+}
+.th,.td{
+  height: 50rpx;
+  text-align: center;
+  width: 100%;
+  padding: 13rpx;
+  font-size: 28rpx;
+  color:rgba(0, 0, 0, 0.644);
+  border: 1rpx solid rgba(128, 128, 128, 0.39);
+}

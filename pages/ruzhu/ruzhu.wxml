@@ -1,0 +1,10 @@
+<view>
+<image src="/image/ruzhu.jpg" class="img_1"/>
+<image src="/image/ruzhu2.jpg" class="img_2"/>
+<!-- 按钮 -->
+<view class='add_btn'>
+ <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
+ <button class='btn'>立即入住</button>
+</navigator>
+</view>
+</view>

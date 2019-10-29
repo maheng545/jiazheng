@@ -1,0 +1,28 @@
+<view>
+
+  <view class="baojie_view">
+    <text class="baojie_text">保洁</text>
+  </view>
+  <view class="baojie_button">
+    <button class="richang">日常保洁</button>
+    <button class="shendu">深度保洁</button>
+    <button class="kaihuang">开荒保洁</button>
+  </view>
+  <view class="jiadian_view">
+    <text class="jiadian_text">家电清洗</text>
+  </view>
+  <view class="jiadian_button">
+    <button class="youyanji">油烟机清洗</button>
+    <button class="bingxiang">冰箱清洗</button>
+    <button class="xiyiji">洗衣机清洗</button>
+    <button class="kongtiao">空调清洗</button>
+  </view>
+
+  <view class="jiating_view">
+    <text class="jiating_text">家庭清洁</text>
+  </view>
+  <view class="jiating_button">
+    <button class="caboli">擦玻璃</button>
+    <button class="chuchen">除尘除螨</button>
+  </view>
+</view>

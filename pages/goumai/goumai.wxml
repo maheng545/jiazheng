@@ -1,0 +1,41 @@
+<view class="quanju">
+  <!-- 地址 -->
+<view class="address">
+<image src="/image/baojieyuyue.jpg"></image>
+
+</view>
+<!-- 服务面积 -->
+<view class="mianji">
+ <text style="font-size:30rpx;margin-left:50rpx;"class="fuwumianji">服务面积(10-80)平米</text>
+ <input type="text" placeholder="10"></input>
+ <text class="pingmi" >平米</text>
+</view>
+<!-- 服务时间 -->
+<view class="shijian">
+ <text style="font-size:30rpx;margin-left:50rpx;"class="fuwushijian">服务时间</text>
+ <text class="xuanzeshijian" bindtap='search_shijian'>请选择 ></text>
+</view>
+<!-- 温馨提示： -->
+<view class="tishi">
+<text style="font-size:20rpx;margin-left:20rpx;margin-top:10rpx;">温馨提示：</text>
+  <text style="font-size:20rpx;display:block;margin-left:20rpx;margin-top:10rpx">新职到家家政服务是服务平台，暂不支持开具发票，如有需要请与劳动者协商。</text>
+  <text style="font-size:20rpx;display:block;margin-left:20rpx;margin-top:10rpx">持到家享卡用户，到家将提供自营服务，因在售卡时已开具发票，值卡消费则不再提供发票。</text>
+</view>
+<!-- 按钮 -->
+<view class='add_btn'>
+ <navigator url="../yuyuedingdan/yuyuedingdan"open-type="navigate"hover-class="none"> 
+ <button class='btn'>下一步</button>
+</navigator>
+</view>
+<!-- 选择服务时间 -->
+<view class="shijian_view {{bg}}">
+<!-- 第一行取消确定按钮 -->
+  <view class="shouhang">
+  <text class="shouhang_text_quxiao" bindtap='search_quxiao'>取消</text>
+
+  <text class="shouhang_text">选择服务时间</text>
+  <text class="shouhang_text_queding">确定</text>
+
+  </view>
+</view>
+</view>

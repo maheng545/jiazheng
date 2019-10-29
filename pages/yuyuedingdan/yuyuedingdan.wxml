@@ -1,0 +1,30 @@
+<view class="yuyue_view">
+<!-- 订单详情 -->
+ <view class="dingdanname">
+ </view>
+ <!-- 优惠卷 -->
+  <view class="youhuijuan">
+    <text class="youhuijuan_text">优惠卷</text>
+    <text class="youhuijuan_buzhichi">暂不支持  ></text>
+  </view>
+   <!-- 会员卡 -->
+  <view class="huiyuanka">
+    <text class="huiyuanka_text">会员卡</text>
+    <text class="huiyuanka_buzhichi">暂不支持  ></text>
+  </view>
+  <!-- 服务地址信息 -->
+  <view class="fuwudizhi">
+  <text class="biaoti">服务地址信息</text>
+  <text class="fuwudizhi_dizhi">服务地址：</text>
+   <text class="fuwudizhi_phone">联系电话：</text>
+
+  </view>
+  <!-- 按钮 -->
+<view class='add_btn'>
+<text class="xuzhifu">需支付：</text>
+<text class="price">105元</text>
+ <navigator url="../zhifu/zhifu"open-type="navigate"hover-class="none"> 
+ <button class='btn'>去结算</button>
+</navigator>
+</view>
+</view>
