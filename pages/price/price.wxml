@@ -36,7 +36,7 @@
     <!-- 按钮 -->
 <view class='add_btn'>
  <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
- <button class='btn'>保存</button>
+ <button class='btn'>保</button>
 </navigator>
 </view>
 
