@@ -1,23 +1,16 @@
-<view>
-<view class="login_view">
+<!--index.wxml-->
+<view class="container">
+  <view class='row'>
+  <image src="/image/shouji.png" class="img1"></image>
+    <input placeholder='请输入手机号' bindinput='bindPhoneInput' style="width:470rpx;"/>
+  </view>
+  <view class='row'>
+   <image src="/image/yanzhengma.png" class="img2"></image>
+    <input placeholder='请输验证码' bindinput='bindCodeInput' style="width:170rpx;" />
+    <button class='codeBtn' bindtap='getCode' hidden='{{hidden}}' disabled='{{btnDisabled}}'>{{btnValue}}</button>
+  </view>
+  <view>
+    <button class='save' bindtap='save'>登录</button>
+  </view>
 
-<view class="user_view">
-<image src="/image/shouji.png"class="shouji"></image>
-<input type="text" class="user" placeholder="请输入手机号"/></view>
-<view class="pwd_view">
-<image src="/image/yanzhengma.png"class="yanzhengma"></image>
-
-<input type="text" class="pwd" placeholder="验证码"/>
-   <button class="btn">获取验证码</button>
-</view>
- <button class="login_btn">登录</button>
- </view>
- <!-- 微信登录 -->
- <view class="weixin"> 
-  <text class="text">使用第三方登录</text>
-  <navigator>
-  <image src="/image/weixin2.png"class="weixin_image"></image>
-<text class="weixin_text">微信登录</text>
-  </navigator>
- </view>
 </view>
