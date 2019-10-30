@@ -8,11 +8,12 @@ Page({
     hidden: true,
     btnValue: '',
     btnDisabled: false,
+    name: '',
     phone: '',
     code: '',
     second: 60
   },
-  onLoad: function () {
+  onLoad: function() {
 
   },
   //姓名输入
@@ -49,16 +50,16 @@ Page({
   getCode(e) {
     var that = this;
     zhenzisms.client.init('https://sms_developer.zhenzikj.com', '103151', 'a7a25586-b1f9-49ae-a095-c5ea793bc6ce');
-    zhenzisms.client.sendCode(function (res) {
-        wx.showToast({
-          title: res.data.data,
-          icon: 'none',
-          duration: 2000
-        })
-      }, that.data.phone, '验证码为:{code}', '', 60 * 5, 4);
+    zhenzisms.client.sendCode(function(res) {
+      wx.showToast({
+        title: res.data.data,
+        icon: 'none',
+        duration: 2000
+      })
+    }, that.data.phone, '验证码为:{code}', '', 60 * 5, 4);
 
   },
-  timer: function () {
+  timer: function() {
     let promise = new Promise((resolve, reject) => {
       let setTimer = setInterval(
         () => {
@@ -76,8 +77,7 @@ Page({
             })
             resolve(setTimer)
           }
-        }
-        , 1000)
+        }, 1000)
     })
     promise.then((setTimer) => {
       clearInterval(setTimer)
@@ -85,19 +85,82 @@ Page({
   },
   //保存
   save(e) {
+
     //console.log('姓名: ' + this.data.name);
     //console.log('手机号: ' + this.data.phone);
     //console.log('验证码: ' + this.data.code);
 
+    var that = this;
     //检验验证码
     var result = zhenzisms.client.validateCode(this.data.phone, this.data.code);
     if (result == 'ok') {
       console.log('验证正确');
+      wx.showToast({
+
+        title: '验证正确',
+
+        icon: 'success',
+
+        duration: 1000
+
+      })
+      var phone = this.data.phone;
+      wx.request({
+        url: 'http://localhost:3000/per/user_id/' + phone,
+        method: 'GET',
+        data: {},
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success(res) {
+          var data = res.data.data;
+          if (data == 0) {
+            // 如果没有用户就新建
+            wx: wx.request({
+              url: 'http://localhost:3000/per/add_user/' + phone,
+              data: {},
+              header: {
+                'content-type': 'application/x-www-form-urlencoded'
+              },
+              method: 'GET',
+              dataType: 'json',
+              responseType: 'text',
+              success(res) {
+                //用户存到本地
+                wx.setStorageSync('phone', phone);
+                //跳到首页
+                wx.switchTab({
+                  url: '../shouye/shouye'
+                })
+               
+              }
+
+            })
+          }
+          else {
+            //用户存到本地
+            wx.setStorageSync('phone', phone);
+            wx.switchTab({
+              url: '../shouye/shouye'
+            })
+          }
+        },
+
+      })
     } else if (result == 'empty') {
       console.log('验证错误, 未生成验证码!');
     } else if (result == 'number_error') {
       console.log('验证错误，手机号不一致!');
     } else if (result == 'code_error') {
+      wx.showToast({
+
+        title: '验证码错误！',
+
+        icon: 'error',
+
+        duration: 1000
+
+      })
       console.log('验证错误，验证码不一致!');
     } else if (result == 'code_expired') {
       console.log('验证错误，验证码已过期!');

@@ -6,11 +6,16 @@
   </view>
   <view class='row'>
    <image src="/image/yanzhengma.png" class="img2"></image>
-    <input placeholder='请输验证码' bindinput='bindCodeInput' style="width:170rpx;" />
+    <input placeholder='请输验证码' bindinput='bindCodeInput' style="width:170rpx" />
     <button class='codeBtn' bindtap='getCode' hidden='{{hidden}}' disabled='{{btnDisabled}}'>{{btnValue}}</button>
   </view>
   <view>
     <button class='save' bindtap='save'>登录</button>
   </view>
-
+ 
+</view>
+<view class="disanfang">
+<text class="text1">使用第三方登录</text>
+<image src="/image/weixin2.png" class="img3"></image>
+<text class="text2">微信登录</text>
 </view>
