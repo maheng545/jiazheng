@@ -1,8 +1,8 @@
 <view class="quanju">
   <!-- 地址 -->
 <view class="address">
-<image src="/image/baojieyuyue.jpg"></image>
-
+<!-- <image src="/image/baojieyuyue.jpg"></image> -->
+<text class="dizhi">请选择服务地址</text>
 </view>
 <!-- 服务面积 -->
 <view class="mianji">
