@@ -1,18 +1,23 @@
 .container{
-  border: 1px solid red;
-  height: 900rpx;
+  height: 800rpx;
 }
 .row{
-  border: 1rpx solid rgba(128, 128, 128, 0.61);
+ 
   height: 100rpx;
   width: 590rpx;
   border-radius: 20ch;
+  background: white;
+   border: 1.5rpx solid rgba(128, 128, 128, 0.082);
+   background: rgba(128, 128, 128, 0.082);
 }
 .row input{
-
+position: absolute;
     margin-top: 25rpx;
     font-size: 30rpx;
-    float: left;
+    /* float: left; */
+    margin-left: 80rpx;
+
+    
 }
 .img1{
   width:50rpx;
@@ -37,4 +42,34 @@ font-size: 30rpx;
  font-weight: 200;
 position: absolute;
  margin-left:360rpx;
+}
+.save{
+  width: 590rpx;
+  border-radius:10ch; 
+  background: #ff6666;
+color:white;
+font-weight: 400;
+}
+.disanfang{
+  height: 300rpx;
+}
+.text1{
+  position: absolute;
+  margin-left: 260rpx;
+  margin-top: 50rpx;
+  color:gray;
+}
+.img3{
+  width: 120rpx;
+  height: 115rpx;
+  position: absolute;
+  margin-left: 320rpx;
+  margin-top: 110rpx;
+}
+.text2{
+  position: absolute;
+  margin-left: 310rpx;
+  margin-top: 230rpx;
+  color:gray;
+  font-size: 33rpx;
 }

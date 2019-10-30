@@ -24,6 +24,7 @@ Page({
 
   },
   getType() {
+    
     var that = this;
     wx.request({
       url: "http://localhost:3000/per/getType",
