@@ -4,6 +4,9 @@
 .address{
   width:100%;
   height:200rpx;
+  background-image: url("http://cdn.pixabay.com/photo/2016/04/09/05/04/envelope-1317446_960_720.jpg");
+  background-size: 790rpx 216rpx;
+  background-position: left -15rpx top -15rpx; 
 }
 .address image{
    width:100%;
@@ -119,4 +122,9 @@ margin-top: 10rpx;
 .bg2{
   display: block;
 }
-
+.dizhi{
+  font-size: 35rpx;
+  position: absolute;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}

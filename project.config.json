@@ -56,8 +56,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/price/price",
-					"pathName": "pages/price/price",
+					"name": "pages/goumai/goumai",
+					"pathName": "pages/goumai/goumai",
 					"query": "",
 					"scene": null
 				}
