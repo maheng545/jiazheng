@@ -10,8 +10,8 @@
        <view class="th">服务价格</view>
       </view>
       <view class="tr" wx:for="{{date}}" wx:key="">
-       <view class="td">{{item.p_name}}</view>
-       <view class="td">{{item.p_price}}元/平米(10平米起)</view>
+       <view class="td"><text>{{item.p_name}}</text></view>
+       <view class="td"><text>{{item.p_price}}</text>元/平米(10平米起)</view>
       </view>
     </view>
 </view>
@@ -22,9 +22,9 @@
 <image src="/image/b6.jpg"class="baojie_image6"></image>
 <image src="/image/b7.jpg"class="baojie_image6"></image>
 <!-- 按钮 -->
-<view class='add_btn'>
- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
- <button class='btn'>立即购买</button>
-</navigator>
+<view class='add_btn' wx:for="{{date}}" wx:key="">
+ <!-- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none">  -->
+ <button class='btn' bindtap="goumai" data-p_name="{{item.p_name}}" data-p_price="{{item.p_price}}">立即购买</button>
+<!-- </navigator> -->
 </view>
 </view>
