@@ -4,7 +4,7 @@
     <text>货运</text>
   </navigator>
 
-  <navigator class="baojie">
+  <navigator class="baojie" url="../leibie/leibie"open-type="navigate"hover-class="none">
     <image src="/image/xiaoshigong.png"></image>
     <text>保洁小时工</text>
   </navigator>

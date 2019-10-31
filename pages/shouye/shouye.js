@@ -24,7 +24,9 @@ Page({
 
   },
   getType() {
-    
+    // wx.clearStorageSync();
+    var phone = wx.getStorageSync('phone');
+    console.log(phone);
     var that = this;
     wx.request({
       url: "http://localhost:3000/per/getType",
@@ -45,10 +47,15 @@ Page({
     })
   },
   dianji:function(e){
+    var phone=wx.getStorageSync('phone');
     var name = e.currentTarget.dataset.name;
     var id = e.currentTarget.dataset.id;
     var lujing="擦玻璃";
-    if(name==lujing){
+    if(phone==0){
+     wx.navigateTo({
+       url: '../login/login',
+     })
+    }else if(name==lujing){
     wx:wx.navigateTo({
       url: '../baojie/baojie?id='+id,
       success: function(res) {},

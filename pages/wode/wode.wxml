@@ -1,6 +1,7 @@
 <!-- 账号信息 -->
 <view class="user_view">
-
+  <text class="user_text" bindtap="login">{{user}}</text>
+  <image src="/image/touxiang.png" class="touxiang"></image>
 </view>
 <!-- 功能 -->
 <view class="gongneng">
@@ -15,5 +16,5 @@
 </view>
 <!-- 退出 -->
 <view class="tuichu">
-  <button>退出登录</button>
+  <button bindtap="tuichu">退出登录</button>
 </view>

@@ -3,7 +3,7 @@
 <image src="/image/ruzhu2.jpg" class="img_2"/>
 <!-- 按钮 -->
 <view class='add_btn'>
- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
+ <navigator url="../fubufuwu/fubufuwu"open-type="navigate"hover-class="none"> 
  <button class='btn'>立即入住</button>
 </navigator>
 </view>
