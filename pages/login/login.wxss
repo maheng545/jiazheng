@@ -15,9 +15,7 @@ position: absolute;
     margin-top: 25rpx;
     font-size: 30rpx;
     /* float: left; */
-    margin-left: 80rpx;
-
-    
+    margin-left: 80rpx;   
 }
 .img1{
   width:50rpx;

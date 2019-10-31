@@ -7,7 +7,7 @@
 <!-- 服务面积 -->
 <view class="mianji">
  <text style="font-size:30rpx;margin-left:50rpx;"class="fuwumianji">服务面积(10-80)平米</text>
- <input type="text" placeholder="10"></input>
+ <input type="text" placeholder="10" bindinput="getMianJi"></input>
  <text class="pingmi" >平米</text>
 </view>
 <!-- 服务时间 -->
