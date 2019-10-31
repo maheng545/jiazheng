@@ -9,7 +9,7 @@ Page({
     var that = this;
     console.log("编号是:")
     wx.request({
-      url: 'http://localhost:3000/per/selectUsersById/' + id,
+      url: 'http://localhost:3000/per/fuwu_price/' + id,
       method: 'GET',
       data: {
       },

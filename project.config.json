@@ -56,8 +56,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/login/login",
-					"pathName": "pages/login/login",
+					"name": "pages/leibie/leibie",
+					"pathName": "pages/leibie/leibie",
 					"query": "",
 					"scene": null
 				}

@@ -1,7 +1,6 @@
 .user_view{
   width:98%;
   height:200rpx;
-  border:1px solid red;
   margin-left:1%; 
 }
 .gongneng{
@@ -35,3 +34,25 @@
   background: #ffffff;
   font-size: 15px;
 }
+
+.user_text{
+  position: absolute;
+   margin-left: 80rpx;
+  margin-top: 60rpx;
+  font-size: 40rpx;
+}
+.touxiang{
+  width:100rpx;
+  height: 100rpx;
+  position: absolute;
+  margin-left: 550rpx;
+  margin-top: 50rpx;
+}
+.user_text2{
+  font-size: 25rpx;
+  color:gray;
+  position: absolute;
+    margin-left: 90rpx;
+  margin-top: 110rpx;
+}
+
