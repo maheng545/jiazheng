@@ -116,7 +116,7 @@ Page({
           var data = res.data.data;
           if (data == 0) {
             // 如果没有用户就新建
-            wx: wx.request({
+           wx.request({
               url: 'http://localhost:3000/per/add_user/' + phone,
               data: {},
               header: {
@@ -156,7 +156,7 @@ Page({
 
         title: '验证码错误！',
 
-        icon: 'error',
+        icon: 'none',
 
         duration: 1000
 

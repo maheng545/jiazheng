@@ -56,7 +56,7 @@ Page({
        url: '../login/login',
      })
     }else if(name==lujing){
-    wx:wx.navigateTo({
+    wx.navigateTo({
       url: '../baojie/baojie?id='+id,
       success: function(res) {},
       fail: function(res) {},

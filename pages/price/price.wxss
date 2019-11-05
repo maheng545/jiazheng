@@ -78,7 +78,7 @@ background: rgba(128, 128, 128, 0.068);
     text-align: center;
 }
 .jijia_input{
-background: rgba(128, 128, 128, 0.068);
+background: rgba(128, 128, 128, 0.123);
  position: absolute;
   font-size: 28rpx;
   margin-left: 530rpx;
@@ -86,7 +86,10 @@ background: rgba(128, 128, 128, 0.068);
     border-radius:10rpx;
     height: 130rpx; 
     width:170rpx;
+    line-height: 120rpx;
     text-align: center;
+    color:gray;
+    
 }
 .beizhu{
    height: 350rpx;
@@ -124,6 +127,7 @@ width: 700rpx;
 background:#e63c3c;  
 color: #fff;  
 margin-top:10rpx;
+
 }
 .tanchu{
 height: 200rpx;   
@@ -189,4 +193,10 @@ margin-top:100rpx;
 }
 .ge{
   margin-left: 50rpx;
+}
+.bg1{
+  display:none;
+}
+.bg2{
+  display: block;
 }

@@ -1,0 +1,20 @@
+<view class="renzheng">
+  <view class="renzheng1">
+    <text class="text1">根据以下认证方式，完善以下信息</text>
+    <image src='/image/geren.png' class="geren_img"></image>
+    <text class="text2">实名认证</text>
+  </view>
+  <view class="renzheng2">
+    <text class="text3">请使用本人真实信息完成实名认证</text>
+    <view class="view_name">
+   <text class="text4">真实姓名</text>
+   <input type="text" placeholder="输入姓名" class="user" name="username" bindinput="username_input"></input>
+    </view>
+
+    <view class="view_name2">
+   <text class="text5">身份证号</text>
+   <input type="text" placeholder="输入身份证号" class="number" name='phone' bindinput="phone_input"></input>
+    </view>
+     <button class="kaishi_btn" bindtap="tijiao">开始认证</button>
+  </view>
+</view>

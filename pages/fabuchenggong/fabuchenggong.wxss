@@ -1,0 +1,122 @@
+.fabu {
+  height: 1000rpx;
+  background: rgba(128, 128, 128, 0.123);
+}
+
+.chenggong {
+  height: 200rpx;
+  background: white;
+  margin-top: 50rpx;
+}
+
+.img {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  margin-left: 270rpx;
+  margin-top: 20rpx;
+}
+
+.text1 {
+  position: absolute;
+  font-size: 30rpx;
+  margin-left: 320rpx;
+  margin-top: 20rpx;
+  font-weight: 200;
+}
+
+.text2 {
+  position: absolute;
+  font-size: 35rpx;
+  margin-left: 210rpx;
+  margin-top: 70rpx;
+}
+
+.text3 {
+  position: absolute;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+
+.geren {
+  height: 150rpx;
+  background: white;
+  margin-top: 80rpx;
+}
+
+.qiye {
+  height: 150rpx;
+  background: white;
+  margin-top: 50rpx;
+}
+
+.img2 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-left: 50rpx;
+  margin-top: 45rpx;
+}
+
+.text4 {
+  font-size: 33rpx;
+  position: absolute;
+  margin-left: 110rpx;
+  margin-top: 45rpx;
+}
+
+.text5 {
+  font-size: 28rpx;
+  position: absolute;
+  margin-left: 250rpx;
+  margin-top: 50rpx;
+  color: gray;
+}
+
+.img3 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-left: 50rpx;
+  margin-top: 45rpx;
+}
+
+.text6 {
+  font-size: 33rpx;
+  position: absolute;
+  margin-left: 110rpx;
+  margin-top: 45rpx;
+}
+
+.text7 {
+  font-size: 28rpx;
+  position: absolute;
+  margin-left: 330rpx;
+  margin-top: 50rpx;
+  color: gray;
+}
+
+.btn1 {
+  width: 130rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-left: 600rpx;
+  margin-top: 45rpx;
+  font-size: 27rpx;
+  line-height: 50rpx;
+  background: rgba(255, 0, 0, 0.788);
+  color: white;
+}
+
+.btn2 {
+  width: 130rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-left: 600rpx;
+  margin-top: 45rpx;
+  font-size: 27rpx;
+  line-height: 50rpx;
+  background: rgba(255, 0, 0, 0.788);
+  color: white;
+}

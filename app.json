@@ -3,6 +3,7 @@
     
     "pages/shouye/shouye",
     "pages/dingdan/dingdan",
+    "pages/ruzhu/ruzhu",
     "pages/wode/wode",
     "pages/baojie/baojie",
     "pages/goumai/goumai",
@@ -13,11 +14,13 @@
     "pages/xiugai_address/xiugai_address",
     "pages/xinzeng_address/xinzeng_address",
     "pages/login/login",
-    "pages/ruzhu/ruzhu",
     "pages/fubufuwu/fubufuwu",
     "pages/leibie/leibie",
     "pages/fuwuxiangqing/fuwuxiangqing",
-    "pages/price/price"
+    "pages/price/price",
+    "pages/ditu/ditu",
+    "pages/fabuchenggong/fabuchenggong",
+    "pages/shimingrenzheng/shimingrenzheng"
  
     
     
@@ -45,6 +48,12 @@
         "iconPath": "/image/qinzihuodong.png",
         "pagePath": "pages/dingdan/dingdan",
         "text": "订单"
+      },
+      {
+        "selectedIconPath": "/image/ruzhu2.png",
+        "iconPath": "/image/ruzhu.png",
+        "pagePath": "pages/ruzhu/ruzhu",
+        "text": "入住"
       },
       {
         "selectedIconPath": "/image/account2.png",

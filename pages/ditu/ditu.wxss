@@ -1,0 +1,10 @@
+#xz{
+  background: #ff6666;
+  color:white;
+}
+.dizhi{
+  font-size: 30rpx;
+
+ width: 95%;
+ margin-left: 3%;
+}

@@ -2,14 +2,13 @@
   height: 100rpx;
   border-bottom: 1px solid rgba(128, 128, 128, 0.24);
   font-size: 30rpx;
-  color:rgba(219, 212, 212, 0);
   width: 97%;
  
   margin-left: 2%;
 }
 .biaozhun{
 
-color:rgba(219, 212, 212, 0);
+
  font-size: 30rpx;
   width: 97%;
   margin-left: 2%;
@@ -148,4 +147,36 @@ radio .wx-radio-input.wx-radio-input-checked::before{
   position: absolute;
   margin-left: 650rpx;
 margin-top:20rpx; 
+}
+.text5{
+
+  position: absolute;
+  margin-left:600rpx;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color:rgba(128, 128, 128, 0.616);
+
+}
+.bg1{
+  color: black;
+}
+.tg1{
+  color:black;
+  position: absolute;
+  margin-left:500rpx;
+  margin-top: 20rpx;
+}
+.text6{
+  font-size: 20rpx;
+  border: 1px solid #DAA520;
+  color:#DAA520;
+  position: absolute;
+  margin-left:550rpx;
+  margin-top: 70rpx;
+}
+.yincang1{
+  display: none;
+}
+.yincang2{
+  display: block;
 }
