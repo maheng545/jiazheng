@@ -1,6 +1,9 @@
 <view class="yuyue_view">
 <!-- 订单详情 -->
  <view class="dingdanname">
+ <view>{{o_name}}({{count}}平米)</view>
+  <view>{{o_time}}<text>{{o_total}}</text></view>
+
  </view>
  <!-- 优惠卷 -->
   <view class="youhuijuan">
@@ -15,14 +18,13 @@
   <!-- 服务地址信息 -->
   <view class="fuwudizhi">
   <text class="biaoti">服务地址信息</text>
-  <text class="fuwudizhi_dizhi">服务地址：</text>
-   <text class="fuwudizhi_phone">联系电话：</text>
-
+  <text class="fuwudizhi_dizhi">服务地址：{{aa_address}}</text>
+   <text class="fuwudizhi_phone">联系电话：{{a_phone}}</text>
   </view>
   <!-- 按钮 -->
 <view class='add_btn'>
 <text class="xuzhifu">需支付：</text>
-<text class="price">105元</text>
+<text class="price">{{o_total}}元</text>
  <navigator url="../zhifu/zhifu"open-type="navigate"hover-class="none"> 
  <button class='btn'>去结算</button>
 </navigator>

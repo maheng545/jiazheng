@@ -18,9 +18,13 @@
     "pages/leibie/leibie",
     "pages/fuwuxiangqing/fuwuxiangqing",
     "pages/price/price",
+<<<<<<< Updated upstream
     "pages/ditu/ditu",
     "pages/fabuchenggong/fabuchenggong",
     "pages/shimingrenzheng/shimingrenzheng"
+=======
+    "pages/picker/picker"
+>>>>>>> Stashed changes
  
     
     

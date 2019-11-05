@@ -79,11 +79,10 @@ margin-left:50rpx;
 }
 .save{
   height:80rpx;
- width:400rpx;
+ width:100%;
 background: rgba(255, 0, 0, 0.747);
 position: absolute;
 margin-top:30rpx;
-margin-left:330rpx;
 color:white;
 
 }

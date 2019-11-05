@@ -4,14 +4,14 @@
 
 <!-- 服务价格 -->
 <view class="baojie_price">
-    <view class="table">
-      <view class="tr">
-       <view class="th">服务项目</view>
+    <view class="table" >
+      <view class="tr" wx:for="{{date1}}" wx:key="" data-id="{{item.id}}" catchtap='clickGetId'>
+       <view class="th" >服务项目</view>
        <view class="th">服务价格</view>
       </view>
       <view class="tr" wx:for="{{date}}" wx:key="">
-       <view class="td"><text>{{item.p_name}}</text></view>
-       <view class="td"><text>{{item.p_price}}</text>元/平米(10平米起)</view>
+       <view class="td"><text >{{item.p_name}}</text></view>
+       <view class="td"><text >{{item.p_price}}</text><text>元/平米(10平米起)</text></view>
       </view>
     </view>
 </view>
