@@ -86,9 +86,7 @@ Page({
   //保存
   save(e) {
 
-    //console.log('姓名: ' + this.data.name);
-    //console.log('手机号: ' + this.data.phone);
-    //console.log('验证码: ' + this.data.code);
+    
 
     var that = this;
     //检验验证码

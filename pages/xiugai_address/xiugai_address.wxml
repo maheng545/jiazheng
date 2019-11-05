@@ -2,26 +2,25 @@
 <!-- 联系人 -->
 <view class="user">
 <text class="user_name">联系人</text>
-<input type="text" value="梁松涛" />
+<input type="text" value="{{a_name}}" bindblur="getA_name"/>
 </view>
 <!-- 手机号 -->
 <view class="number">
 <text class="number_name">手机号</text>
-<input type="text" value="15565792719" />
+<input type="text" value="{{a_phone}}" bindblur="getA_phone"/>
 </view>
 <!-- 服务地址 -->
 <view class="address">
 <text class="address_name">服务地址</text>
-<input type="text" value="新乡职业技术学院" />
+<input type="text" value="{{a_address}}" bindblur="getA_address"/>
 </view>
 <!-- 服务地址 -->
 <view class="address_juti">
 
-<input type="text" value="四号楼" />
+<input type="text" value="{{a_xiangxi}}" bindblur="getA_xiangxi"/>
 </view>
 <!-- 删除和保存 -->
 <view class="button">
-<button class="delete">删除</button>
-<button class="save">保存</button>
+<button class="save" bindtap="xiugai">保存</button>
 </view>
 </view>

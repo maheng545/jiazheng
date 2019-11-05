@@ -34,7 +34,14 @@ background:#fff;
 color: rgba(0, 0, 0, 0.699);  
 margin-top:10rpx;
 }
-.address image{
+ .image1 image{
+  width:45rpx;
+  height: 45rpx;
+  position: absolute;
+  margin-left: 600rpx;
+  margin-top:55rpx;
+}
+.image2 image{
   width:45rpx;
   height: 45rpx;
   position: absolute;

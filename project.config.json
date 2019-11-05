@@ -56,8 +56,13 @@
 			"list": [
 				{
 					"id": 0,
+<<<<<<< Updated upstream
 					"name": "pages/dingdan/dingdan",
 					"pathName": "pages/dingdan/dingdan",
+=======
+					"name": "pages/address/address",
+					"pathName": "pages/address/address",
+>>>>>>> Stashed changes
 					"query": "",
 					"scene": null
 				}
