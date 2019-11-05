@@ -1,0 +1,24 @@
+<view class="fabu">
+ <!-- 成功 -->
+  <view class="chenggong">
+    <image src='/image/duihao.png' class="img"></image>
+    <text class="text1">已提交，待上架</text>
+    <text class="text2">完成以下认证，即可接单</text>
+  </view>
+  <text class="text3">选择身份信息</text>
+  <!-- 个人 -->
+  <view class="geren">
+  <image src="/image/geren.png" class="img2"></image>
+  <text class="text4">个人商家</text>
+  <text class="text5">(我没有营业执照)</text>
+  <button class="btn1" bindtap="renzheng_btn">去认证</button>
+  </view>
+  <!-- 企业 -->
+  <view class="qiye">
+  <image src="/image/dianpu5.png" class="img3"></image>
+  <text class="text6">企业/个体工商</text>
+  <text class="text7">(我有营业执照)</text>
+    <button class="btn2">去认证</button>
+
+  </view>
+</view>

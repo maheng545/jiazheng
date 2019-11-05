@@ -22,7 +22,7 @@
     <text class="jiating_text">家庭清洁</text>
   </view>
   <view class="jiating_button">
-    <button class="caboli">擦玻璃</button>
+    <button class="caboli" bindtap="caboli_bin">擦玻璃</button>
     <button class="chuchen">除尘除螨</button>
   </view>
 </view>

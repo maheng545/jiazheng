@@ -12,32 +12,30 @@
       <text class="text3">项目</text>
       <text class="text4">价格</text>
       <text class="text5">计价单位</text>
-      <input type="text" class="xiangmu_input" placeholder="请填写项目（30个字内）"></input>
-      <input type="text" class="price_input" placeholder="价格"></input>
-      <input type="text" class="jijia_input" placeholder="请选择ⅴ"></input>
-
+      <input type="text" class="xiangmu_input" placeholder="请填写项目（30个字内）" bindinput="xiangmu_input_bind" name="xiangmu_input_name"></input>
+      <input type="text" class="price_input" placeholder="价格" bindinput="price_input_bind" name="price_input_name"></input>
+       <text class="jijia_input" bindtap="xuanze">{{neirong}}</text>
     </view>
     <view class="beizhu">
     <text class="text6">添加备注</text>
-    <textarea class="beizhu_textarea" placeholder="您可以这样写，比如：本报价单仅为参考价格，若故障与描述不符，则根据具体故补充充差价，夜间服务增加收费30元。"></textarea>
+    <textarea class="beizhu_textarea" placeholder="您可以这样写，比如：本报价单仅为参考价格，若故障与描述不符，则根据具体故补充充差价，夜间服务增加收费30元。" bindinput="bindTextAreaBlur" name="textarea"></textarea>
      </view>
      <!-- 弹出部分 -->
-<view class="tanchu">
-<text class="text_7">取消</text>
+<view class="tanchu {{bg}}">
+<text class="text_7" bindtap="remove">取消</text>
 <text class="text_8">选择计价规格</text>
-<text class="text_9">确定</text>
-<radio-group class="danxuan">
-  <radio>元/次</radio>
-   <radio class="mi">元/米</radio>
-    <radio class="ge">元/个</radio>
+<text class="text_9" bindtap="queren">确定</text>
+<radio-group class="danxuan" bindchange="radiodengjiChange">
+  <radio value="元/次">元/次</radio>
+   <radio class="mi" value="元/米">元/米</radio>
+    <radio class="ge" value="元/个">元/个</radio>
   </radio-group>
 </view>
   </view>
     <!-- 按钮 -->
 <view class='add_btn'>
- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none"> 
- <button class='btn'>保</button>
-</navigator>
+ <button class='btn' bindtap="baocunshuju">保存</button>
+
 </view>
 
 </view>
