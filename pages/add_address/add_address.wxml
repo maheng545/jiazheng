@@ -1,36 +1,36 @@
 <view class="add_address_vew">
-<!-- 联系人 -->
-<view class="lianxiren">
- <text style="font-size:30rpx;margin-left:23rpx;"class="lianxi_name">联系人</text>
- <input type="text" placeholder="姓名" bindinput="getName" class="name"/>
-   <radio-group class="danxuan" bindchange="laternext">
-   <radio value="先生" checked="checked">先生</radio>
-    <radio value="女士" style="margin-left:50rpx;">女士</radio>
-   </radio-group>
- </view>
- <!-- 电话 -->
-   <view class="phone">
-   <text style="font-size:30rpx;margin-left:23rpx;"class="lianxi_phone">电话</text>
- <input type="text" bindinput="getPhone"  placeholder="手机号码" class="number"/>
-   </view>
-   <!-- 地址 -->
-   <view class="address">
-   <text style="font-size:30rpx;margin-left:23rpx;"class="lianxi_address">地址</text>
-    <input type="text" bindinput="getAddress"  placeholder="收货地址" class="number"/>
-   </view>
-    <!-- 门牌号 -->
-   <view class="menpaihao">
-   <text style="font-size:30rpx;margin-left:23rpx;"class="lianxi_menpaihao">门牌号</text>
-    <input type="text" bindinput="getXiangXi" placeholder="例：1号楼一单元101室" class="menpai"/>
+  <!-- 联系人 -->
+  <view class="lianxiren">
+    <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_name">联系人</text>
+    <input type="text" placeholder="姓名" bindinput="getName" class="name" />
+    <radio-group class="danxuan" bindchange="laternext">
+      <radio value="先生" checked="checked">先生</radio>
+      <radio value="女士" style="margin-left:50rpx;">女士</radio>
+    </radio-group>
+  </view>
+  <!-- 电话 -->
+  <view class="phone">
+    <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_phone">电话</text>
+    <input type="text" bindinput="getPhone" placeholder="手机号码" class="number" />
+  </view>
+  <!-- 地址 -->
+  <view class="address">
+    <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_address">地址</text>
+    <input type="text" bindinput="getAddress" placeholder="收货地址" class="number" />
+  </view>
+  <!-- 门牌号 -->
+  <view class="menpaihao">
+    <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_menpaihao">门牌号</text>
+    <input type="text" bindinput="getXiangXi" placeholder="例：1号楼一单元101室" class="menpai" />
 
-   </view>
-   <!-- 设为默认地址 -->
-   <view class="moren">
-          <text style="font-size:30rpx;margin-left:23rpx;"class="lianxi_moren">设为默认地址</text>
+  </view>
+  <!-- 设为默认地址 -->
+  <view class="moren">
+    <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_moren">设为默认地址</text>
 
-   </view>
-   <!-- 保存 -->
-    <view class="baocun">
+  </view>
+  <!-- 保存 -->
+  <view class="baocun">
     <button class="baocun_button" bindtap="save">保存</button>
-    </view> 
+  </view>
 </view>

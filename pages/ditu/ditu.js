@@ -61,7 +61,7 @@ Page({
     });
 
   },
-  onLoad: function () {
+  onLoad: function() {
     console.log('地图定位！')
     let that = this
 
@@ -75,7 +75,7 @@ Page({
           this.setData({
             centerX: longitude,
             centerY: latitude,
-           
+
           })
         }
       });
@@ -83,8 +83,8 @@ Page({
   },
 
   /**
-    * 标示点移动触发
-    */
+   * 标示点移动触发
+   */
   regionchange(e) {
     console.log(e.type)
 
@@ -100,8 +100,8 @@ Page({
   },
 
   /**
-    * control控件点击事件
-    */
+   * control控件点击事件
+   */
   controltap(e) {
     // console.log(e.controlId)
     this.moveToLocation()
@@ -112,19 +112,19 @@ Page({
   /**
    * 获取标识
    */
- 
+
 
   /**
-    * 移动到自己位置
-    */
-  moveToLocation: function () {
+   * 移动到自己位置
+   */
+  moveToLocation: function() {
     let mpCtx = wx.createMapContext("map");
     mpCtx.moveToLocation();
 
   },
   /**
-    * 还有地图标识，可以在name上面动手
-     */
+   * 还有地图标识，可以在name上面动手
+   */
   createMarker(point) {
     let latitude = point.latitude;
     let longitude = point.longitude;
@@ -141,28 +141,28 @@ Page({
     return marker;
 
   },
-  dizhi_input: function (e) {
+  dizhi_input: function(e) {
     this.setData({
       biao: e.detail.value
     })
 
   },
-  onShow:function(){
+  onShow: function() {
     //获取文本框得值
-    var dizhi_data=this.data.address
-   if(dizhi_data!=null){
-     //返回上一个页面
-     var pages = getCurrentPages();
-     var prevPage = pages[pages.length - 2]; //上一个页面
-     //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
-     prevPage.setData({
-       mydata: {
-         dizhi_data: dizhi_data
-       }
-     })
-     wx.navigateBack({//返回
-       delta: 1
-     })
-   }
+    var dizhi_data = this.data.address
+    if (dizhi_data != null) {
+      //返回上一个页面
+      var pages = getCurrentPages();
+      var prevPage = pages[pages.length - 2]; //上一个页面
+      //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+      prevPage.setData({
+        mydata: {
+          dizhi_data: dizhi_data
+        }
+      })
+      wx.navigateBack({ //返回
+        delta: 1
+      })
+    }
   }
 })

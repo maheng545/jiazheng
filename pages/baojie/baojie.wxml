@@ -1,30 +1,35 @@
 <view class="baojie">
-<image src="/image/b1.jpg" class="baojie_image1"></image>
+  <image src="/image/b1.jpg" class="baojie_image1"></image>
 
 
-<!-- 服务价格 -->
-<view class="baojie_price">
-    <view class="table" >
+  <!-- 服务价格 -->
+  <view class="baojie_price">
+    <view class="table">
       <view class="tr" wx:for="{{date1}}" wx:key="" data-id="{{item.id}}" catchtap='clickGetId'>
-       <view class="th" >服务项目</view>
-       <view class="th">服务价格</view>
+        <view class="th">服务项目</view>
+        <view class="th">服务价格</view>
       </view>
       <view class="tr" wx:for="{{date}}" wx:key="">
-       <view class="td"><text >{{item.p_name}}</text></view>
-       <view class="td"><text >{{item.p_price}}</text><text>元/平米(10平米起)</text></view>
+        <view class="td">
+          <text>{{item.p_name}}</text>
+        </view>
+        <view class="td">
+          <text>{{item.p_price}}</text>
+          <text>元/平米(10平米起)</text>
+        </view>
       </view>
     </view>
-</view>
-<image src="/image/b2.jpg" class="baojie_image2"></image>
- <image src="/image/b3.jpg" class="baojie_image3"></image>
-<image src="/image/b4.jpg"class="baojie_image4"></image>
-<image src="/image/b5.jpg"class="baojie_image5"></image>
-<image src="/image/b6.jpg"class="baojie_image6"></image>
-<image src="/image/b7.jpg"class="baojie_image6"></image>
-<!-- 按钮 -->
-<view class='add_btn' wx:for="{{date}}" wx:key="">
- <!-- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none">  -->
- <button class='btn' bindtap="goumai" data-p_name="{{item.p_name}}" data-p_price="{{item.p_price}}">立即购买</button>
-<!-- </navigator> -->
-</view>
+  </view>
+  <image src="/image/b2.jpg" class="baojie_image2"></image>
+  <image src="/image/b3.jpg" class="baojie_image3"></image>
+  <image src="/image/b4.jpg" class="baojie_image4"></image>
+  <image src="/image/b5.jpg" class="baojie_image5"></image>
+  <image src="/image/b6.jpg" class="baojie_image6"></image>
+  <image src="/image/b7.jpg" class="baojie_image6"></image>
+  <!-- 按钮 -->
+  <view class='add_btn' wx:for="{{date}}" wx:key="">
+    <!-- <navigator url="../goumai/goumai"open-type="navigate"hover-class="none">  -->
+    <button class='btn' bindtap="goumai" data-p_name="{{item.p_name}}" data-p_price="{{item.p_price}}">立即购买</button>
+    <!-- </navigator> -->
+  </view>
 </view>

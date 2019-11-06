@@ -2,59 +2,59 @@ Page({
   data: {
     // logs: []
     name: '',
-    val:'',
+    val: '',
     phone: '',
     address: '',
-    xiangxi:'',
-    id:''
+    xiangxi: '',
+    id: ''
 
 
   },
-  laternext: function (e) {
+  laternext: function(e) {
     // console.log(e);
-    var val = e.detail.value;//获取radio值，类型：字符串
+    var val = e.detail.value; //获取radio值，类型：字符串
     wx.setStorageSync('val', val);
 
-   
+
   },
-  getName: function (e) {
+  getName: function(e) {
     this.setData({
       name: e.detail.value
     })
-  }, 
-  getPhone: function (e) {
+  },
+  getPhone: function(e) {
     this.setData({
       phone: e.detail.value
     })
-  }, 
-  getAddress: function (e) {
+  },
+  getAddress: function(e) {
     this.setData({
       address: e.detail.value
     })
-  }, 
-  getXiangXi: function (e) {
+  },
+  getXiangXi: function(e) {
     this.setData({
       xiangxi: e.detail.value
     })
-  }, 
-  save(e){
+  },
+  save(e) {
     let name = this.data.name
     var val = wx.getStorageSync('val');
     var id = wx.getStorageSync('id');
     let phone = this.data.phone
     let address = this.data.address
     let xiangxi = this.data.xiangxi
-    console.log("联系人姓名是:" + name);
-    console.log("单选按钮的值是:" + val);
-    console.log("电话是:" + phone);
-    console.log("地址的值是:" + address);
-    console.log("门牌号值是:" + xiangxi);
-    console.log("传过来编号是:" + id);
-    if(name==""||phone==""||address==""||xiangxi==""){
+    // console.log("联系人姓名是:" + name);
+    // console.log("单选按钮的值是:" + val);
+    // console.log("电话是:" + phone);
+    // console.log("地址的值是:" + address);
+    // console.log("门牌号值是:" + xiangxi);
+    // console.log("传过来编号是:" + id);
+    if (name == "" || phone == "" || address == "" || xiangxi == "") {
       wx.showModal({
         title: '提示',
         content: '请完善地址信息!',
-        success: function (res) {
+        success: function(res) {
           if (res.confirm) {
             console.log('用户点击确定')
           } else {
@@ -80,19 +80,14 @@ Page({
         success(res) {
           console.log("添加成功")
           wx.navigateTo({
-            url: '../goumai/goumai',
+            url: '../add_address/add_address',
           })
-
-        
-
         },
-        fail: function (err) { console.log(err.data); },
-
-        complete: function () { }
+        fail: function(err) {
+          console.log(err.data);
+        },
+        complete: function() {}
       })
-
     }
-    
-
   }
 })

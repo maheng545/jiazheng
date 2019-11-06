@@ -1,5 +1,5 @@
 Page({
-  renzheng_btn:function(){
+  renzheng_btn: function() {
     wx.navigateTo({
       url: '../shimingrenzheng/shimingrenzheng',
     })

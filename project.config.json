@@ -24,10 +24,11 @@
 	"libVersion": "2.0.4",
 	"appid": "wxe8692bbf83d1b55f",
 	"projectname": "%E5%AE%B6%E6%94%BF%E6%9C%8D%E5%8A%A1",
+	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -44,7 +45,6 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"gamePlugin": {

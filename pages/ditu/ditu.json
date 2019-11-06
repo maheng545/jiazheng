@@ -1,6 +1,5 @@
 {
-"navigationBarBackgroundColor": "#fff",
-"navigationBarTitleText": "选择服务地址",
-"navigationBarTextStyle": "black"
-
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "选择服务地址",
+  "navigationBarTextStyle": "black"
 }
