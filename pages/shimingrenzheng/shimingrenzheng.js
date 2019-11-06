@@ -18,6 +18,7 @@ phone_input:function(e){
     var user=this.data.username;
     var number=this.data.phone
     var phone=wx.getStorageSync('phone')
+    var r_id=wx.getStorageSync('r_id')
      if(user==0){
        wx.showToast({
          title: '认证必须填写真实姓名',
@@ -41,6 +42,46 @@ phone_input:function(e){
          title: '姓名格式有误',
          icon: 'none',
          duration: 1000
+       })
+     }else{
+       //根据用户查id
+       wx.request({
+         url: 'http://localhost:3000/per/user_id/' + phone,
+         data: {},
+         header: {
+           'content-type': 'application/x-www-form-urlencoded'
+         },
+         method: 'GET',
+         dataType: 'json',
+         responseType: 'text',
+         success(res) {
+           // console.log(res.data.data[0].id)
+           var id = res.data.data[0].id
+           wx.request({
+             url: 'http://localhost:3000/per/add_shiming',
+             method: 'post',
+             data: {
+               s_name: shuju,
+               s_number: biaozhu,
+             
+               id: id,
+               r_id:r_id
+             },
+             header: {
+               'content-type': 'application/x-www-form-urlencoded'
+             },
+             success(res) {
+               wx.showToast({
+                 title: '认证成功，请等待审核',
+                 icon: 'success',
+                 duration: 1000
+               })
+               wx.switchTab({
+                 url: '../wode/wode',
+               })
+             }
+           })
+         }
        })
      }
   }

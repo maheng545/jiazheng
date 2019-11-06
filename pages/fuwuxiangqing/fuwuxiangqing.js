@@ -37,7 +37,7 @@ Page({
     if (dizhi_data != null) {
       var jiequ = dizhi_data.substring(0, 7);
        var zongchangdu=jiequ+'..'
-       console.log(zongchangdu)
+      
       this.setData({
         fanwei: zongchangdu,
         tg: 'tg1',
@@ -126,8 +126,68 @@ Page({
       var jiage_data = wx.getStorageSync('jiage_data');
       var danwei_data = wx.getStorageSync('danwei_data');
       var area_data = wx.getStorageSync('area_data');
-      var user = wx.getStorageSync('phone');
+      var phone = wx.getStorageSync('phone');
       
+      //根据用户查id
+      wx.request({
+        url: 'http://localhost:3000/per/user_id/' + phone,
+        data: {},
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        method: 'GET',
+        dataType: 'json',
+        responseType: 'text',
+        success(res) {
+          // console.log(res.data.data[0].id)
+          var id = res.data.data[0].id
+           wx.request({
+             url: 'http://localhost:3000/per/add_ruzhu',
+        method: 'post',
+        data: {
+          r_biaoti: shuju,
+          r_liucheng: biaozhu,
+          r_xiangmu: xiangmu_data,
+          r_price: jiage_data,
+          r_jijia: danwei_data,
+          r_beizhu: area_data,
+          id:id
+        },
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success(res) {
+             //查询所属id带到下一页面
+          wx.request({
+            url: 'http://localhost:3000/per/ruzhu_selectid',
+            method: 'post',
+            data: {
+              r_biaoti: shuju,
+              r_liucheng: biaozhu,
+              r_xiangmu: xiangmu_data,
+              r_price: jiage_data,
+              r_jijia: danwei_data,
+              r_beizhu: area_data,
+              id: id
+            },
+            header: {
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            success(res) {
+             var r_id=res.data.data[0].r_id;
+              wx.setStorageSync('r_id', r_id);
+             wx.navigateTo({
+               url: '../fabuchenggong/fabuchenggong',
+             })
+            },
+
+          })
+        },
+
+      })
+        }
+      })
+     
 
     }
   }

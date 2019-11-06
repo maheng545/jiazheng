@@ -112,3 +112,20 @@ margin-left: 640rpx;
   background: white;
   margin-top: 10rpx;
 }
+.daipingjia{
+  background: white;
+  margin-top: 10rpx;
+}
+.pingjia{
+width: 150rpx;
+height: 60rpx;
+background: white;
+border: 1px solid #ff6666;
+color:#ff6666;
+margin-left:580rpx;
+font-size: 25rpx;
+}
+.yiwancheng{
+  background: white;
+  margin-top: 10rpx;
+}
