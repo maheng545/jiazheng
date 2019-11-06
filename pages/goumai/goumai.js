@@ -14,7 +14,8 @@ Page({
     a_phone: '',
     id: '',
     p_name: '',
-    p_price: ''
+    p_price: '',
+    count:''
 
   },
 
@@ -120,7 +121,13 @@ Page({
     var date2 = util.formatTime(new Date());
     var stdt = new Date(o_time.replace("-", "/"));
     var etdt = new Date(date2.replace("-", "/"));
-    if (count < 10 || count > 80) {
+    if (count == 0) {
+      wx.showModal({
+        title: '温馨提示',
+        content: '请填写服务面积!',
+      })
+    }
+    else  if (count < 10 || count > 80) {
       wx.showModal({
         title: '温馨提示',
         content: '服务面积不再限定范围!',
