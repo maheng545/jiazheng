@@ -14,7 +14,7 @@
   height:30rpx;
   position: absolute;
   margin-left:180rpx;
-  margin-top:40rpx;
+  margin-top:34rpx;
   font-size: 30rpx;
 }
 .number{
@@ -32,7 +32,7 @@
   height:30rpx;
   position: absolute;
   margin-left:180rpx;
-  margin-top:40rpx;
+   margin-top:34rpx;
   font-size: 30rpx;
 }
 .address{
@@ -50,7 +50,7 @@
   height:30rpx;
   position: absolute;
   margin-left:220rpx;
-  margin-top:40rpx;
+  margin-top:34rpx;
   font-size: 30rpx;
 }
 .address_juti{
@@ -63,7 +63,7 @@
   height:30rpx;
   position: absolute;
   margin-left:50rpx;
-  margin-top:35rpx;
+  margin-top:34rpx;
   font-size: 30rpx;
 }
 .button{

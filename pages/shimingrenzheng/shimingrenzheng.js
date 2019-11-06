@@ -61,8 +61,8 @@ phone_input:function(e){
              url: 'http://localhost:3000/per/add_shiming',
              method: 'post',
              data: {
-               s_name: shuju,
-               s_number: biaozhu,
+               s_name: user,
+               s_number: number,
              
                id: id,
                r_id:r_id
@@ -74,7 +74,7 @@ phone_input:function(e){
                wx.showToast({
                  title: '认证成功，请等待审核',
                  icon: 'success',
-                 duration: 1000
+                 duration: 2000
                })
                wx.switchTab({
                  url: '../wode/wode',

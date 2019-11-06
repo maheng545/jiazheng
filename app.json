@@ -20,7 +20,10 @@
     "pages/ditu/ditu",
     "pages/fabuchenggong/fabuchenggong",
     "pages/shimingrenzheng/shimingrenzheng",
-    "pages/picker/picker"
+    "pages/picker/picker",
+    "pages/pingjia/pingjia"
+    
+
   ],
   "window": {
     "backgroundTextStyle": "light",
