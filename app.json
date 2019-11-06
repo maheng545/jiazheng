@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/shouye/shouye",
     "pages/dingdan/dingdan",
     "pages/ruzhu/ruzhu",
@@ -18,11 +17,10 @@
     "pages/leibie/leibie",
     "pages/fuwuxiangqing/fuwuxiangqing",
     "pages/price/price",
-     "pages/ditu/ditu",
+    "pages/ditu/ditu",
     "pages/fabuchenggong/fabuchenggong",
     "pages/shimingrenzheng/shimingrenzheng",
     "pages/picker/picker"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,13 +1,13 @@
 <view bindtap='onChangeAddress'>
- <button value="{{address}}" id="xz">选择地址</button>
- </view>
+  <button value="{{address}}" id="xz">选择地址</button>
+</view>
 
-<input value="{{address}}" name="address" disabled='true'class="dizhi"bindinput="dizhi_input"></input>
+<input value="{{address}}" name="address" disabled='true' class="dizhi" bindinput="dizhi_input"></input>
 
-<map id="map"  scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 580px;" latitude="{{latitude}}" longitude="{{longitude}}" circles="{{circles}}"
-  longitude="{{longitude}}"></map>
-  <view class="rgc_info"> 
-  
+<map id="map" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 580px;" latitude="{{latitude}}" longitude="{{longitude}}"
+  circles="{{circles}}" longitude="{{longitude}}"></map>
+<view class="rgc_info">
+
   <text>{{markers.name}}</text>
   <!-- //判断有没有地址 然后跳到上一个页面 -->
 </view>

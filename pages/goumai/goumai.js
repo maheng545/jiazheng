@@ -18,15 +18,7 @@ Page({
 
   },
 
-  pressView: function(e) {
-    let a_phone = e.currentTarget.dataset.a_phone
-    let a_address = e.currentTarget.dataset.a_address
-    let a_xiangxi = e.currentTarget.dataset.a_xiangxi
-    let aa_address = a_address + a_xiangxi
-    wx.setStorageSync('a_phone', a_phone);
-    wx.setStorageSync('aa_address', aa_address);
-    console.log("标签的值是:" + a_phone + aa_address); //获取上一个view的文本，不需要自定义data-*了
-  },
+
   getTime: function(e) {
     this.setData({
       o_time: e.detail.value
@@ -63,7 +55,6 @@ Page({
     });
     var that = this;
     var id = wx.getStorageSync('id');
-    console.log("购买js传过来的id是:" + id)
     wx.request({
       url: 'http://localhost:3000/per/selectAddress/' + id,
       method: 'GET',
@@ -75,6 +66,12 @@ Page({
         that.setData({
           date1: res.data.data,
         })
+        let a_phone = res.data.data[0].a_phone
+        let a_address = res.data.data[0].a_address
+        let a_xiangxi = res.data.data[0].a_xiangxi
+        let aa_address = a_address + a_xiangxi
+        wx.setStorageSync('a_phone', a_phone);
+        wx.setStorageSync('aa_address', aa_address);
       },
       fail: function(err) {
         console.log(err.data);
@@ -116,7 +113,6 @@ Page({
     var p_price = wx.getStorageSync('p_price');
     console.log(p_price)
     var o_total = count * p_price;
-    console.log("总价是:" + o_total)
     wx.setStorageSync('o_total', o_total);
     let o_time = this.data.o_time;
     wx.setStorageSync("o_time", o_time)
@@ -148,7 +144,8 @@ Page({
           o_price: wx.getStorageSync('p_price'),
           o_count: this.data.count,
           o_total: o_total,
-          id: wx.getStorageSync('id')
+          id: wx.getStorageSync('id'),
+          date2: util.formatTime(new Date())
         },
         header: {
           'content-type': 'application/x-www-form-urlencoded'
@@ -156,7 +153,6 @@ Page({
         success(res) {
           wx.navigateTo({
             url: '../yuyuedingdan/yuyuedingdan',
-            //  url: '../goumai/goumai?p_name=' + p_name + '&p_price=' + p_price,
           })
         },
         fail: function(err) {

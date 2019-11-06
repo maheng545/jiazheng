@@ -3,8 +3,12 @@
   <view class="address" wx:for="{{date}}" wx:key="">
     <text class="address_text_dizhi">{{item.a_address}}{{item.a_xiangxi}}</text>
     <text class="address_text_name">{{item.a_name}}{{item.a_phone}}</text>
-    <view class="image1"><image src="/image/shanchu.png" data-a_id="{{item.a_id}}" bindtap="deleteImage"></image></view>
-    <view class="image2"><image src="/image/bianji.png" data-a_id="{{item.a_id}}" data-a_address="{{item.a_address}}" data-a_xiangxi="{{item.a_xiangxi}}" data-a_name="{{item.a_name}}" data-a_phone="{{item.a_phone}}" bindtap="clickImage"></image></view>
+    <view class="image1">
+      <image src="/image/shanchu.png" data-a_id="{{item.a_id}}" bindtap="deleteImage"></image>
+    </view>
+    <view class="image2">
+      <image src="/image/bianji.png" data-a_id="{{item.a_id}}" data-a_address="{{item.a_address}}" data-a_xiangxi="{{item.a_xiangxi}}" data-a_name="{{item.a_name}}" data-a_phone="{{item.a_phone}}" bindtap="clickImage"></image>
+    </view>
   </view>
   <!-- 按钮 -->
   <view class='add_btn'>

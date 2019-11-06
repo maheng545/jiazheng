@@ -6,7 +6,7 @@
 
 
  <view wx:if="{{date1.length!=0}}">
-  <view wx:for="{{date1}}" wx:key="" catchtap='pressView' data-a_phone="{{item.a_phone}}" data-a_address="{{item.a_address}}" data-a_xiangxi="{{item.a_xiangxi}}">
+  <view wx:for="{{date1}}" wx:key="">
  <view> <text>{{item.a_name}}</text></view>
  <view> <text>{{item.a_phone}}</text></view>
  <view> <text>{{item.a_address}}{{item.a_xiangxi}}</text></view>

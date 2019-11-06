@@ -5,7 +5,7 @@
 </view>
 <!-- 价钱 -->
 <view class="price">
-<text class="price_text">￥105</text>
+<text class="price_text">￥{{o_total}}</text>
 </view>
 <!-- 微信支付 -->
 <view class="weixin">
@@ -20,7 +20,7 @@
 <view class='add_btn'>
 
  <navigator url="../add_address/add_address"open-type="navigate"hover-class="none"> 
- <button class='btn'>立即支付￥105</button>
+ <button class='btn'>立即支付￥{{o_total}}</button>
 </navigator>
 </view>
 

@@ -1,13 +1,12 @@
-
 <view class="dingdan_view">
   <!-- 全部订单 -->
   <view class="dingdan">
     <view class="text_view">
       <text class="dingdan_text">全部订单</text>
-   
+
     </view>
     <view class="bianli">
-       <!-- 遍历已完成待评价 -->
+      <!-- 遍历已完成待评价 -->
       <view class="daipingjia" wx:for="{{date4}}" wx:key="">
         <view class="toubu">
           <image src="/image/tubiao.png" class="img1"></image>
@@ -23,7 +22,7 @@
           <text class="o_address">{{item.o_address}}</text>
         </view>
         <view class="weibu">
-         
+
           <button class="pingjia">评价</button>
         </view>
       </view>
@@ -43,22 +42,22 @@
           <text class="o_address">{{item.o_address}}</text>
         </view>
         <view class="weibu">
-          <button class="quxaio" bindtap="quxiao_btn">取消订单</button>
+          <button class="quxaio" bindtap="quxiao_btn" data-o_id="{{item.o_id}}">取消订单</button>
           <button class="zhifu">支付</button>
         </view>
       </view>
-       <!-- 遍历已完成已评价 -->
+      <!-- 遍历已完成已评价 -->
       <view class="yiwancheng" wx:for="{{date5}}" wx:key="">
         <view class="tou">
-           <image src="/image/tubiao.png" class="img1"></image>
+          <image src="/image/tubiao.png" class="img1"></image>
           <text class="o_name">{{item.o_name}}</text>
           <text class="o_state2">{{item.o_state}}</text>
         </view>
-         <view>
+        <view>
           <image src="/image/shijian.png" class="img2"></image>
           <text class="o_time">{{item.o_time}}</text>
         </view>
-          <view class="shenti">
+        <view class="shenti">
           <image src="/image/location.png" class="img3"></image>
           <text class="o_address">{{item.o_address}}</text>
         </view>
@@ -66,15 +65,15 @@
       <!-- 遍历已付款 -->
       <view class="yifukuan" wx:for="{{date2}}" wx:key="">
         <view class="tou">
-           <image src="/image/tubiao.png" class="img1"></image>
+          <image src="/image/tubiao.png" class="img1"></image>
           <text class="o_name">{{item.o_name}}</text>
           <text class="o_state2">{{item.o_state}}</text>
         </view>
-         <view>
+        <view>
           <image src="/image/shijian.png" class="img2"></image>
           <text class="o_time">{{item.o_time}}</text>
         </view>
-          <view class="shenti">
+        <view class="shenti">
           <image src="/image/location.png" class="img3"></image>
           <text class="o_address">{{item.o_address}}</text>
         </view>
@@ -82,15 +81,15 @@
       <!-- 遍历已取消 -->
       <view class="yiquxiao" wx:for="{{date3}}" wx:key="">
         <view class="tou">
-           <image src="/image/tubiao.png" class="img1"></image>
+          <image src="/image/tubiao.png" class="img1"></image>
           <text class="o_name">{{item.o_name}}</text>
           <text class="o_state2">{{item.o_state}}</text>
         </view>
-         <view>
+        <view>
           <image src="/image/shijian.png" class="img2"></image>
           <text class="o_time">{{item.o_time}}</text>
         </view>
-          <view class="shenti">
+        <view class="shenti">
           <image src="/image/location.png" class="img3"></image>
           <text class="o_address">{{item.o_address}}</text>
         </view>
