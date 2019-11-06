@@ -1,0 +1,39 @@
+.img1{
+  width: 100%;
+}
+.weibu{
+  margin-top: -9rpx;
+  height: 500rpx;
+  background: rgba(128, 128, 128, 0.075);
+}
+.kuangzi{
+  width: 470rpx;
+  height: 330rpx;
+  background: white;
+  z-index: 100;
+  position: absolute;
+  margin-left:150rpx; 
+  margin-top: -170rpx;
+border-radius:20rpx; 
+}
+.img2{
+  width: 160rpx;
+  height: 140rpx;
+  position: absolute;
+ margin-left:150rpx; 
+  margin-top: 30rpx;
+}
+.text_name{
+  color:red;
+   position: absolute;
+ margin-left:160rpx; 
+  margin-top: 180rpx;
+  font-size: 30rpx;
+}
+.text_biaoti{
+ color:rgba(128, 128, 128, 0.74);
+   position: absolute;
+ margin-left:60rpx; 
+  margin-top: 230rpx;
+  font-size: 28rpx;
+}

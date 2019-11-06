@@ -1,11 +1,14 @@
 Page({
 data:{
   user:'立即登录',
-  
+ xiaoxi:''
 },
 onLoad:function(){
   var that=this;
- 
+
+this.setData({
+  xiaoxi:'1'
+})
   var phone = wx.getStorageSync('phone');
   var user = phone.replace(phone.substring(3, 8),'*****');
  

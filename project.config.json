@@ -56,8 +56,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/dingdan/dingdan",
-					"pathName": "pages/dingdan/dingdan",
+					"name": "pages/pingjia/pingjia",
+					"pathName": "pages/pingjia/pingjia",
 					"query": "",
 					"scene": null
 				}

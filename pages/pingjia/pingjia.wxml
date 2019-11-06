@@ -1,0 +1,13 @@
+<view>
+<view class="beijing">
+<image src="/image/beijing.jpg" class="img1"></image>
+</view>
+<view class="weibu">
+   <view class="kuangzi">
+    <image src="/image/touxiang.png" class="img2"></image>
+    <text class="text_name">NO:董崔瑞</text>
+    <text class="text_biaoti">服务宣言：不满意倒找钱啊啊</text>
+    <text class="text_xiangmu">服务项目：擦玻璃</text>
+  </view>
+</view>
+</view>
