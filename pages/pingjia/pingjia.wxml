@@ -6,8 +6,41 @@
    <view class="kuangzi">
     <image src="/image/touxiang.png" class="img2"></image>
     <text class="text_name">NO:董崔瑞</text>
-    <text class="text_biaoti">服务宣言：不满意倒找钱啊啊</text>
-    <text class="text_xiangmu">服务项目：擦玻璃</text>
+    <text class="text_biaoti">服务宣言：不满意倒找钱啊啊风速达到</text>
+    <view class="xiangmu_view">
+      <text class="text_xiangmu">服务项目:擦玻璃</text>
+      <text class="text_jingyan">个人经历:1年工作经验</text>
+    </view>
+  
   </view>
+  <text class="ping">请评价您的服务：</text>
+  <!--星星评价-->
+<view class="container">
+  <view class="comment1-description">
+    <view class="star-pos" style="display:flex;flex-direction:row;">
+      <view class="stars  {{flag>=1? 'on': ''}}" bindtap="changeColor1"></view>
+      <view class="stars  {{flag>=2? 'on': ''}}" bindtap="changeColor2"></view>
+      <view class="stars  {{flag>=3? 'on': ''}}" bindtap="changeColor3"></view>
+      <view class="stars  {{flag>=4? 'on': ''}}" bindtap="changeColor4"></view>
+      <view class="stars  {{flag>=5? 'on': ''}}" bindtap="changeColor5"></view>
+    </view>
+  </view>
+<!--文本域  -->
+  <view class="weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" bindinput="bindTextAreaChange" placeholder="我要给出评价" style="height: 8em" value="{{info}}" maxlength="{{noteMaxLen}}" focus />
+        <view class="weui-textarea-counter">{{noteNowLen}}/{{noteMaxLen}}</view>
+      </view>
+    </view>
+  </view>
+<!--发布按钮  -->
+<view class="btnSf">
+<button bindtap="bindSubmit">提交</button>
 </view>
 </view>
+</view>
+
+</view>
+
+
