@@ -75,6 +75,40 @@ Page({
             fail: function(err) {},
 
             complete: function() {}
+          }),
+          //查询完成未评价
+          wx.request({
+          url: "http://localhost:3000/per/select_orders_yiwanchengdaipingjia/" + id,
+            method: 'GET',
+            data: {},
+            header: {
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            success(res) {
+              that.setData({
+                date4: res.data.data
+              })
+            },
+            fail: function (err) { },
+
+            complete: function () { }
+          }),
+          //查询完成已评价
+          wx.request({
+          url: "http://localhost:3000/per/select_orders_yiwanchengpingjia/" + id,
+            method: 'GET',
+            data: {},
+            header: {
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            success(res) {
+              that.setData({
+                date5: res.data.data
+              })
+            },
+            fail: function (err) { },
+
+            complete: function () { }
           })
       }
     })

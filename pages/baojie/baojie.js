@@ -35,11 +35,11 @@ Page({
   }, 
   getType1() {
     var that = this;
-<<<<<<< Updated upstream
+
    
-=======
+
     var phone = wx.getStorageSync("phone")
->>>>>>> Stashed changes
+
     wx.request({
       url: 'http://localhost:3000/per/user_id/' + phone,
       method: 'GET',
@@ -65,20 +65,19 @@ Page({
   goumai:function(e){
     let p_name = e.currentTarget.dataset.p_name
     let p_price = e.currentTarget.dataset.p_price
-<<<<<<< Updated upstream
+    wx.setStorageSync('p_name', p_name);
+    wx.setStorageSync('p_price', p_price)
     data: {
      
-=======
+
     this.setData({
->>>>>>> Stashed changes
+
       p_name: e.currentTarget.dataset.p_name
     })
-    data: { 
-     
-    }
+ 
     wx.navigateTo({
       url: '../goumai/goumai?p_name=' +p_name+'&p_price='+p_price,
     })
   }
-  ,
+  }
 })

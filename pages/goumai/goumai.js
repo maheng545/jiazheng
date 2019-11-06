@@ -114,6 +114,7 @@ Page({
     var count = this.data.count;
     wx.setStorageSync("count", count)
     var p_price = wx.getStorageSync('p_price');
+    console.log(p_price)
     var o_total = count * p_price;
     console.log("总价是:" + o_total)
     wx.setStorageSync('o_total', o_total);

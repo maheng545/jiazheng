@@ -7,6 +7,26 @@
    
     </view>
     <view class="bianli">
+       <!-- 遍历已完成待评价 -->
+      <view class="daipingjia" wx:for="{{date4}}" wx:key="">
+        <view class="toubu">
+          <image src="/image/tubiao.png" class="img1"></image>
+          <text class="o_name">{{item.o_name}}</text>
+          <text class="o_state2">{{item.o_state}}</text>
+        </view>
+        <view>
+          <image src="/image/shijian.png" class="img2"></image>
+          <text class="o_time">{{item.o_time}}</text>
+        </view>
+        <view class="shenti">
+          <image src="/image/location.png" class="img3"></image>
+          <text class="o_address">{{item.o_address}}</text>
+        </view>
+        <view class="weibu">
+         
+          <button class="pingjia">评价</button>
+        </view>
+      </view>
       <!-- 遍历未付款 -->
       <view class="daizhifu" wx:for="{{date}}" wx:key="">
         <view class="toubu">
@@ -25,6 +45,22 @@
         <view class="weibu">
           <button class="quxaio" bindtap="quxiao_btn">取消订单</button>
           <button class="zhifu">支付</button>
+        </view>
+      </view>
+       <!-- 遍历已完成已评价 -->
+      <view class="yiwancheng" wx:for="{{date5}}" wx:key="">
+        <view class="tou">
+           <image src="/image/tubiao.png" class="img1"></image>
+          <text class="o_name">{{item.o_name}}</text>
+          <text class="o_state2">{{item.o_state}}</text>
+        </view>
+         <view>
+          <image src="/image/shijian.png" class="img2"></image>
+          <text class="o_time">{{item.o_time}}</text>
+        </view>
+          <view class="shenti">
+          <image src="/image/location.png" class="img3"></image>
+          <text class="o_address">{{item.o_address}}</text>
         </view>
       </view>
       <!-- 遍历已付款 -->
