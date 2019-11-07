@@ -6,17 +6,17 @@
 <!-- 功能 -->
 <view class="gongneng">
   <!-- 优惠 -->
-  <navigator url="">
+  <navigator url="" open-type="navigate" hover-class="none">
     <image src="/image/wodeyouhui.png" class=""></image>
     <text>我的优惠</text>
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>
   </navigator>
-  <navigator url="">
-    <image src="/image/wodetaocan.png"></image>
-    <text>我的套餐</text>
+  <navigator url="../qianbao/qianbao" open-type="navigate" hover-class="none">
+    <image src="/image/qianbao.png"></image>
+    <text>我的钱包</text>
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>
   </navigator>
-  <navigator url="">
+  <navigator url="" open-type="navigate" hover-class="none">
     <image src="/image/wodemiaosha.png"></image>
     <text>我的秒杀</text>
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>
@@ -26,13 +26,13 @@
     <text>我的地址</text>
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>
   </navigator>
-  <navigator url="">
+  <navigator url="" open-type="navigate" hover-class="none">
     <image src="/image/kefu.png"></image>
     <text>联系客服 {{xiaoxi}}</text>
     
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>
   </navigator>
-  <navigator url="">
+  <navigator url="" open-type="navigate" hover-class="none">
     <image src="/image/yonghuxieyi.png"></image>
     <text>用户协议</text>
     <text style="margin-left:680rpx;margin-top:35rpx;color:gray">></text>

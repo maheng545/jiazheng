@@ -102,6 +102,25 @@ margin-top:35rpx;
 font-size:30rpx;
 position: absolute;
 margin-left: 150rpx;
-margin-top:30rpx;
+margin-top:32rpx;
 color:#ff6666;
+}
+.pingmi{
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  position: absolute;
+  margin-top: 40rpx;
+}
+.shijian{
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  position: absolute;
+  margin-top: 90rpx;
+}
+.zong{
+ 
+  color:red;
+  position: absolute;
+  margin-top: 50rpx;
+   margin-left: -300rpx;
 }
