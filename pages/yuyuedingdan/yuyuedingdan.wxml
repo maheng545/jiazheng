@@ -1,8 +1,8 @@
 <view class="yuyue_view">
 <!-- 订单详情 -->
  <view class="dingdanname">
- <view>{{o_name}}({{count}}平米)</view>
-  <view>{{o_time}}<text>{{o_total}}</text></view>
+ <view class="pingmi">{{o_name}}({{count}}平米)</view>
+  <view class="shijian">{{o_time}}<text class="zong">{{o_total}}</text></view>
 
  </view>
  <!-- 优惠卷 -->

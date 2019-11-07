@@ -128,4 +128,27 @@ margin-top: 10rpx;
   margin-top: 30rpx;
   margin-left: 30rpx;
 }
-
+.a_name{
+  font-size: 34rpx;
+  margin-left: 15rpx;
+}
+.a_phone{
+  font-size: 34rpx;
+  margin-left: 15rpx;
+}
+.a_address{
+  font-size: 34rpx;
+  margin-left: 15rpx;
+}
+.data{
+  font-size: 30rpx;
+   position: absolute;
+   margin-left: 35rpx;
+   margin-top: 30rpx;
+}
+.shijian_xuanze{
+  font-size: 30rpx;
+  position: absolute;
+  margin-left: 440rpx;
+  margin-top: 25rpx;
+}

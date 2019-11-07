@@ -7,10 +7,10 @@
 
  <view wx:if="{{date1.length!=0}}">
   <view wx:for="{{date1}}" wx:key="">
- <view> <text>{{item.a_name}}</text></view>
- <view> <text>{{item.a_phone}}</text></view>
- <view> <text>{{item.a_address}}{{item.a_xiangxi}}</text></view>
-<!-- <view><navigator url="../add_address/add_address" style="margin-left:650rpx;margin-top:-80rpx;">></navigator></view> -->
+ <view> <text class="a_name">{{item.a_name}}</text></view>
+ <view> <text class="a_phone">{{item.a_phone}}</text></view>
+ <view> <text class="a_address">{{item.a_address}}{{item.a_xiangxi}}</text></view>
+
 <view><text style="margin-left:650rpx;margin-bottom:100rpx;" data-id="{{item.id}}" bindtap="next1">></text></view>
   </view>
 </view>
@@ -30,7 +30,7 @@
 <view class="tui-picker-content" style="margin-top:30rpx;">
  <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
  <view class="tui-picker-detail" >
-  选择服务时间: <input type="text" bindblur="getTime" value="{{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}"/>
+  <text class="data">选择服务时间:</text> <input type="text" bindblur="getTime" class="shijian_xuanze" value="{{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}"/>
  </view>
  </picker>
 </view>
