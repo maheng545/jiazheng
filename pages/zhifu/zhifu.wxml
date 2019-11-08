@@ -1,27 +1,53 @@
+
 <view class="zhifu">
-<!-- 支付剩余时间 -->
-<view class="shijian">
-<text class="text">支付剩余时间</text>
-</view>
-<!-- 价钱 -->
-<view class="price">
-<text class="price_text">￥{{o_total}}</text>
-</view>
-<!-- 微信支付 -->
-<view class="weixin">
-<image src="/image/weixin.png"></image>
-<text class="zhifu_text">微信支付</text>
-<text class="tuijian_text">推荐安装微信5.0及以上的版本使用</text>
-<radio-group class="danxuan">
-  <radio checked="checked"></radio>
-  </radio-group>
-</view>
-<!-- 按钮 -->
-<view class='add_btn'>
+  <!-- 支付剩余时间 -->
+  <view class="shijian">
+    <text class="text">支付剩余时间</text>
+  </view>
+  <!-- 价钱 -->
+  <view class="price">
+    <text class="price_text">￥{{o_total}}</text>
+  </view>
+  <!-- 微信支付 -->
+  <view class="weixin">
+    <image src="/image/weixin.png"></image>
+    <text class="zhifu_text">微信支付</text>
+    <text class="tuijian_text">推荐安装微信5.0及以上的版本使用</text>
+    <radio-group class="danxuan">
+      <radio checked="checked"></radio>
+    </radio-group>
+  </view>
+  <!-- 按钮 -->
+  <view class='add_btn'>
 
- <navigator url="../add_address/add_address"open-type="navigate"hover-class="none"> 
- <button class='btn'>立即支付￥{{o_total}}</button>
-</navigator>
-</view>
+    <navigator url="../add_address/add_address" open-type="navigate" hover-class="none">
+      <button class='btn' catchtap='showInputLayer'>立即支付￥{{o_total}}</button>
+    </navigator>
+  </view>
 
+</view>
+<!--隐藏支付页面 -->
+<view class="yincang" wx:if='{{showyincang}}'>
+  <image src="/image/cuohao.png" class="cuo_img" bindtap="guanbi"></image>
+  <text class="mima_text">请输入支付密码</text>
+  <text class="text2">微信支付</text>
+  <text class="text3">￥510</text>
+  <text class="text4"></text>
+  <text class="text5">支付方式</text>
+  <image src="/image/jinbi.png" class="jinbi_img"></image>
+  <text class="text6">零钱</text>
+</view>
+<!-- 密码输入框 -->
+<view wx:if='{{showPayPwdInput}}'>
+
+  <view class='input_main'>
+
+    <view class='input_row' catchtap='getFocus'>
+      <view class='pwd_item' wx:for='{{6}}' wx:key='item' wx:for-index='i'>
+        <text wx:if='{{pwdVal.length>i}}'></text>
+      </view>
+    </view>
+
+    <input class='input_control' password type='number' focus='{{payFocus}}' bindinput='inputPwd' maxlength='6' />
+  </view>
 </view>

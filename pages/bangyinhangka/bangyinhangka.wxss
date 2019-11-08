@@ -1,0 +1,49 @@
+.zhu{
+  height: 1200rpx;
+  background: rgba(128, 128, 128, 0.062);
+}
+.text1{
+  font-size: 30rpx;
+  color: gray;
+  margin-left: 20rpx;
+}
+.shuru{
+  height: 150rpx;
+  background: white;
+  margin-top: 30rpx;
+}
+.name_view{
+  height: 72rpx;
+  border-bottom: 1rpx solid gray;
+}
+.text2{
+  float: left;
+  font-size: 33rpx;
+  margin-top: 10rpx;
+   margin-left: 10rpx;
+}
+.name_inpuut{
+  font-size: 30rpx;
+  position: absolute;
+   margin-top: 7rpx;
+   margin-left: 120rpx;
+   width: 600rpx;
+}
+.text3{
+  float: left;
+  font-size: 33rpx;
+  margin-top: 10rpx;
+   margin-left: 10rpx;
+}
+.kahao_inpuut{
+  font-size: 30rpx;
+  position: absolute;
+   margin-top: 7rpx;
+   margin-left: 120rpx;
+   width: 600rpx;
+}
+.btn{
+  margin-top:50rpx;
+  background: rgba(0, 128, 0, 0.685); 
+  color:white;
+}

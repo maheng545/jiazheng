@@ -25,12 +25,12 @@
 
   </view>
   <!-- 添加银行卡 -->
-  <view class="add_yinhang" bindtap="tianjiaka_chuxian">
+  <view class="add_yinhang" bindtap="add_yinhang">
     <image src="/image/jia.png" class="add_img"></image>
-    <text class="add_text">添加银行卡</text>
+    <text class="add_text" >添加银行卡</text>
   </view>
   <!-- 充值 -->
-  <view class="add_chong" bindtap="chongzhi_chuxian">
+  <view class="add_chong" bindtap="chongzhi_add">
     <image src="/image/chongzhi2.png" class="add_img2"></image>
     <text class="add_text2">充值</text>
   </view>
@@ -72,27 +72,4 @@
     <button class='btn' bindtap="fanhui">返回个人中心</button>
   </view>
 
-  <!-- 隐藏添加银行卡 -->
-  <view class="yincang {{tianjiaka}}">
-    <text class="kahao">请输入银行卡号:</text>
-    <input type="text" placeholder="请输入卡号" class="kahao_input"></input>
-    <button class="quxiao_bangding" bindtap="quxiaotianjiaka">取消</button>
-    <button class="queding_bangding">绑定</button>
-  </view>
-  <!-- 隐藏充值 -->
-  <view class="chongzhi_yincang {{chongzhi}}">
-    <text class="xuanze">请选择银行卡:</text>
-      <view class='select_box'>
-    <view class='select' catchtap='selectTap'>
-      <text class='select_text'>{{selectData[index]}}</text>
-      <image class='select_img {{show&&"select_img_rotate"}}' src='/image/zheng.png'></image>
-    </view>
-    <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
-      <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
-    </view>
-  </view>
-    <text class="chongzhi_jine">请输入充值金额:</text>
-    <input type="text" placeholder="请输入充值金额" class="jine_input"></input>
-    <button class="quxiao_chongzhi" bindtap="quxiaochongzhi">取消</button>
-    <button class="queding_chongzhi">充值</button>
-  </view>
+ 

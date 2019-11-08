@@ -1,0 +1,63 @@
+.zhu{
+  height: auto;
+}
+
+.kabao{
+  height: auto;
+  margin-top: 100rpx;
+}
+.kamoban{
+  width: 90%;
+  height: 300rpx;
+  margin-left: 5%;
+  border-radius:20rpx; 
+  background: #1295dbd2;
+  margin-top: 10rpx;
+}
+.text1{
+  font-size: 30rpx;
+  color:white;
+  position: absolute;
+  margin-left: 230rpx;
+  margin-top: 80rpx;
+}
+.text2{
+  font-size: 33rpx;
+  color:white;
+  position: absolute;
+  margin-left: 230rpx;
+  margin-top: 140rpx;
+}
+.img{
+  width: 120rpx;
+  height: 120rpx;
+   position: absolute;
+  margin-left: 30rpx;
+  margin-top: 70rpx;
+}
+.tianjia{
+   margin-top: 30rpx;
+  height: 80rpx;
+  background: rgba(128, 128, 128, 0.082);
+  font-size: 30rpx;
+}
+.jia_img{
+   width: 50rpx;
+  height: 50rpx;
+   position: absolute;
+   margin-left: 30rpx;
+   margin-top: 15rpx;
+}
+.text3{
+  color:black;
+  position: absolute;
+   margin-left: 100rpx;
+   margin-top: 20rpx;
+}
+.text4{
+  color:gray;
+   position: absolute;
+   margin-left: 725rpx;
+    margin-top: 20rpx;
+    font-size: 35rpx;
+}
