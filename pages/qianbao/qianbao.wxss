@@ -312,17 +312,5 @@ border: 1px solid #20b2aa;
  border-bottom: 1px solid #20b2aa;
  padding: 10rpx;
 }
-.tianjiaka1{
-  display: none;
-}
-.tianjiaka2{
-  display: block;
-}
-.chongzhi1{
-display: none;
-}
-.chongzhi2{
-display: block;
-}
 
  

@@ -22,7 +22,10 @@
     "pages/shimingrenzheng/shimingrenzheng",
     "pages/picker/picker",
     "pages/pingjia/pingjia",
-    "pages/qianbao/qianbao"
+    "pages/qianbao/qianbao",
+    "pages/tianjiayinhangka/tianjiayinhangka",
+    "pages/bangyinhangka/bangyinhangka",
+    "pages/chongzhi/chongzhi"
     
 
   ],

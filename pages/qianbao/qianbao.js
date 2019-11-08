@@ -1,7 +1,6 @@
 Page({
   data: {
-    tianjiaka:'tianjiaka1',
-    chongzhi:'chongzhi1',
+  
     show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
     selectData: ['1', '2', '3', '4', '5', '6'],//下拉列表的数据
     index: 0//选择的下拉列表下标
@@ -24,30 +23,22 @@ Page({
   onLoad: function (options) {
 
   },
-  tianjiaka_chuxian:function(){
-    this.setData({
-      tianjiaka: 'tianjiaka2'
-    })
-  },
-  chongzhi_chuxian: function () {
-    this.setData({
-      chongzhi: 'chongzhi2'
-    })
-  },
-  quxiaotianjiaka: function () {
-    this.setData({
-      tianjiaka: 'tianjiaka1'
-    })
-  },
-  quxiaochongzhi: function () {
-    this.setData({
-      chongzhi: 'chongzhi1'
-    })
-  },
+ 
+
   fanhui:function(){
     wx.switchTab({
    
       url: '../wode/wode',
+    })
+  },
+  add_yinhang:function(){
+    wx.navigateTo({
+      url: '../tianjiayinhangka/tianjiayinhangka',
+    })
+  },
+  chongzhi_add:function(){
+    wx.navigateTo({
+      url: '../chongzhi/chongzhi',
     })
   }
 

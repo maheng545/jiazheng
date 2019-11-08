@@ -1,0 +1,22 @@
+<view class="zhu">
+  <view class="kabao">
+    <view class="kamoban">
+    <image src="/image/yinhangbiaozhi2.png" class="img"></image>
+      <text class="text1">卡号:</text>
+      <text class="text2">1236 8596 5213 6533</text>
+    </view>
+   <view class="kamoban">
+    <image src="/image/yinhangbiaozhi2.png" class="img"></image>
+      <text class="text1">卡号:</text>
+      <text class="text2">1236 8596 5213 6533</text>
+    </view>
+  
+
+  </view>
+  <!-- 添加 -->
+<view class="tianjia" bindtap="tiao">
+<image src="/image/jia.png" class="jia_img"></image>
+<text class="text3">添加银行卡</text>
+<text class="text4">></text>
+</view>
+</view>
