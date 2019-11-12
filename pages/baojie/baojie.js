@@ -6,26 +6,25 @@ Page({
   },
 
   onLoad: function(e) {
-    var id1 = e.id;
-    wx.setStorageSync("id1", id1)
+    var id = e.id;
+    wx.setStorageSync("id", id)
     this.setData({
-      id1: id1
+      id: id
     })
     this.getType();
     this.getType1();
   },
   getType() {
     var that = this;
-    var id1 = wx.getStorageSync("id1")
+    var id = wx.getStorageSync("id")
     wx.request({
-      url: 'http://localhost:3000/per/fuwu_price/' + id1,
+      url: 'http://localhost:3000/per/fuwu_price/' + id,
       method: 'GET',
       data: {},
       header: {
         'content-type': 'application/x-www-form-urlencoded'
       },
       success(res) {
-        var p_id=res.data.data[0].p_id
         that.setData({
           date: res.data.data,
         })

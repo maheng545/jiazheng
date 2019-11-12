@@ -26,6 +26,7 @@ Page({
   getType() {
     // wx.clearStorageSync();
     var phone = wx.getStorageSync('phone');
+    console.log(phone);
     var that = this;
     wx.request({
       url: "http://localhost:3000/per/getType",
@@ -35,6 +36,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded'
       },
       success(res) {
+        console.log(res.data.data)
         that.setData({
           date: res.data.data
         })

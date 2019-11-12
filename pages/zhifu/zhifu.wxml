@@ -19,8 +19,10 @@
   </view>
   <!-- 按钮 -->
   <view class='add_btn'>
-      <button class='btn'  bindtap="zhufu">立即支付￥{{o_total}}</button>
-            <!-- <button class='btn' catchtap='showInputLayer' bindtap="zhufu">立即支付￥{{o_total}}</button> -->
+
+    <navigator url="../add_address/add_address" open-type="navigate" hover-class="none">
+      <button class='btn' catchtap='showInputLayer'>立即支付￥{{o_total}}</button>
+    </navigator>
   </view>
 
 </view>
@@ -29,7 +31,7 @@
   <image src="/image/cuohao.png" class="cuo_img" bindtap="guanbi"></image>
   <text class="mima_text">请输入支付密码</text>
   <text class="text2">微信支付</text>
-  <text class="text3">￥{{o_total}}</text>
+  <text class="text3">￥510</text>
   <text class="text4"></text>
   <text class="text5">支付方式</text>
   <image src="/image/jinbi.png" class="jinbi_img"></image>
