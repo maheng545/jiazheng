@@ -13,7 +13,7 @@ Page({
     code: '',
     second: 60
   },
-  onLoad: function () {
+  onLoad: function() {
 
   },
   //姓名输入
@@ -24,6 +24,7 @@ Page({
   },
   //手机号输入
   bindPhoneInput(e) {
+    //console.log(e.detail.value);
     var val = e.detail.value;
     this.setData({
       phone: val
@@ -49,7 +50,7 @@ Page({
   getCode(e) {
     var that = this;
     zhenzisms.client.init('https://sms_developer.zhenzikj.com', '103151', 'a7a25586-b1f9-49ae-a095-c5ea793bc6ce');
-    zhenzisms.client.sendCode(function (res) {
+    zhenzisms.client.sendCode(function(res) {
       wx.showToast({
         title: res.data.data,
         icon: 'none',
@@ -58,7 +59,7 @@ Page({
     }, that.data.phone, '验证码为:{code}', '', 60 * 5, 4);
 
   },
-  timer: function () {
+  timer: function() {
     let promise = new Promise((resolve, reject) => {
       let setTimer = setInterval(
         () => {
@@ -85,12 +86,13 @@ Page({
   //保存
   save(e) {
 
-
+    
 
     var that = this;
     //检验验证码
     var result = zhenzisms.client.validateCode(this.data.phone, this.data.code);
     if (result == 'ok') {
+      console.log('验证正确');
       wx.showToast({
 
         title: '验证正确',
@@ -112,7 +114,7 @@ Page({
           var data = res.data.data;
           if (data == 0) {
             // 如果没有用户就新建
-            wx.request({
+           wx.request({
               url: 'http://localhost:3000/per/add_user/' + phone,
               data: {},
               header: {
@@ -123,15 +125,12 @@ Page({
               responseType: 'text',
               success(res) {
                 //用户存到本地
-                var id = res.data.data[0].id
-                wx.setStorageSync('id', id);
-
                 wx.setStorageSync('phone', phone);
                 //跳到首页
                 wx.switchTab({
                   url: '../shouye/shouye'
                 })
-
+               
               }
 
             })
@@ -147,7 +146,9 @@ Page({
 
       })
     } else if (result == 'empty') {
+      console.log('验证错误, 未生成验证码!');
     } else if (result == 'number_error') {
+      console.log('验证错误，手机号不一致!');
     } else if (result == 'code_error') {
       wx.showToast({
 
@@ -158,7 +159,9 @@ Page({
         duration: 1000
 
       })
+      console.log('验证错误，验证码不一致!');
     } else if (result == 'code_expired') {
+      console.log('验证错误，验证码已过期!');
     }
   }
 })

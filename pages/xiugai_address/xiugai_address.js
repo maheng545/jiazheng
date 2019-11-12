@@ -40,10 +40,12 @@ Page({
 
     })
 
+    console.log("---" + a_address + "-----" + a_xiangxi + "------" + a_name + "----" + a_phone)
   },
   xiugai(e) {
     var aa_name = this.data.aa_name
     var a_id = wx.getStorageSync("a_id");
+    console.log(aa_name + this.data.aa_phone + this.data.aa_address + this.data.aa_xiangxi)
     wx.request({
       url: 'http://localhost:3000/per/updateAddressById',
       method: 'post',
@@ -71,6 +73,7 @@ Page({
 
       },
       fail: function(err) {
+        console.log(err.data);
       },
 
       complete: function() {}

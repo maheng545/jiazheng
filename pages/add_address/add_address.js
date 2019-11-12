@@ -6,10 +6,7 @@ Page({
     phone: '',
     address: '',
     xiangxi: '',
-    id: '',
-    dizhi: '收货地址',
-    mydata: '',
-
+    id: ''
 
 
   },
@@ -40,21 +37,29 @@ Page({
       xiangxi: e.detail.value
     })
   },
-
   save(e) {
     let name = this.data.name
     var val = wx.getStorageSync('val');
     var id = wx.getStorageSync('id');
     let phone = this.data.phone
-    let address = this.data.dizhi
+    let address = this.data.address
     let xiangxi = this.data.xiangxi
-
+    // console.log("联系人姓名是:" + name);
+    // console.log("单选按钮的值是:" + val);
+    // console.log("电话是:" + phone);
+    // console.log("地址的值是:" + address);
+    // console.log("门牌号值是:" + xiangxi);
+    // console.log("传过来编号是:" + id);
     if (name == "" || phone == "" || address == "" || xiangxi == "") {
       wx.showModal({
         title: '提示',
         content: '请完善地址信息!',
         success: function(res) {
-          if (res.confirm) {} else {}
+          if (res.confirm) {
+            console.log('用户点击确定')
+          } else {
+            console.log('用户点击取消')
+          }
         }
       })
     } else {
@@ -65,7 +70,7 @@ Page({
           name: this.data.name,
           val: wx.getStorageSync('val'),
           phone: this.data.phone,
-          address: this.data.dizhi,
+          address: this.data.address,
           xiangxi: this.data.xiangxi,
           id: wx.getStorageSync('id')
         },
@@ -73,8 +78,9 @@ Page({
           'content-type': 'application/x-www-form-urlencoded'
         },
         success(res) {
+          console.log("添加成功")
           wx.navigateTo({
-            url: '../address/address',
+            url: '../add_address/add_address',
           })
         },
         fail: function(err) {
@@ -83,24 +89,5 @@ Page({
         complete: function() {}
       })
     }
-  },
-  tiaodao: function() {
-    wx.navigateTo({
-      url: '../ditu/ditu',
-    })
-
-  },
-  //获取上个页面的值
-  onShow: function() {
-    var that = this;
-    var pages = getCurrentPages();
-    var currPage = pages[pages.length - 1]; //当前页面
-    let json = currPage.data.mydata;
-    var dizhi_data = currPage.data.mydata.dizhi_data
-    this.setData({
-      dizhi: dizhi_data
-    })
-
-
   }
 })

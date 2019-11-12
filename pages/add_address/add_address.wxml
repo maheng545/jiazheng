@@ -16,8 +16,7 @@
   <!-- 地址 -->
   <view class="address">
     <text style="font-size:30rpx;margin-left:23rpx;" class="lianxi_address">地址</text>
-    <!-- <input type="text" bindinput="getAddress" placeholder="收货地址" class="number" /> -->
-    <text bindtap="tiaodao" class="number">{{dizhi}}</text>
+    <input type="text" bindinput="getAddress" placeholder="收货地址" class="number" />
   </view>
   <!-- 门牌号 -->
   <view class="menpaihao">

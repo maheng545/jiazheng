@@ -56,23 +56,8 @@
 			"list": [
 				{
 					"id": 0,
-<<<<<<< Updated upstream
 					"name": "pages/zhuce/zhuce",
 					"pathName": "pages/zhuce/zhuce",
-=======
-<<<<<<< Updated upstream
-					"name": "pages/wode/wode",
-					"pathName": "pages/wode/wode",
-=======
-<<<<<<< Updated upstream
-					"name": "pages/qianbao/qianbao",
-					"pathName": "pages/qianbao/qianbao",
-=======
-					"name": "pages/address/address",
-					"pathName": "pages/address/address",
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 					"query": "",
 					"scene": null
 				}

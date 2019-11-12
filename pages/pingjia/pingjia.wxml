@@ -1,15 +1,15 @@
-<view wx:for="{{date}}" wx:key="">
+<view>
 <view class="beijing">
 <image src="/image/beijing.jpg" class="img1"></image>
 </view>
 <view class="weibu">
    <view class="kuangzi">
     <image src="/image/touxiang.png" class="img2"></image>
-    <text class="text_name">NO:{{item.c_name}}</text>
-    <text class="text_biaoti">服务宣言：优质服务,以质为根！</text>
+    <text class="text_name">NO:董崔瑞</text>
+    <text class="text_biaoti">服务宣言：不满意倒找钱啊啊风速达到</text>
     <view class="xiangmu_view">
-      <text class="text_xiangmu">服务项目:{{item.o_name}}</text>
-      <text class="text_jingyan">个人经历:{{item.c_work}}</text>
+      <text class="text_xiangmu">服务项目:擦玻璃</text>
+      <text class="text_jingyan">个人经历:1年工作经验</text>
     </view>
   
   </view>

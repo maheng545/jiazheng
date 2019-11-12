@@ -1,19 +1,8 @@
  <view class="zong">
   <view class="toubu">
-    <view wx:if="{{date2.length==0}}">
-      <view >
     <image src="/image/qianbao2.png" class="qianbao_img"></image>
-    <text class="yue">钱包余额( 元 ) ：0</text>
+    <text class="yue">钱包余额( 元 ) ：0.00</text>
     <text class="text_ti">低于100块不可体现</text>
-    </view>
-    </view>
-  </view>
-  <view wx:if="{{date2.length!=0}}">
-  <view >
-    <image src="/image/qianbao2.png" class="qianbao_img"></image>
-    <text class="yue">钱包余额( 元 ) ：{{o_money}}</text>
-    <text class="text_ti">低于100块不可体现</text>
-    </view>
     <view class="yinhangka_view">
       <scroll-view scroll-x="true">
         <view class="banner" scroll-x="true">
@@ -23,14 +12,17 @@
           </view>
           <view class="banner_Item">
             <image src="/image/nongyeyinhang.jpg" class="yinhangka"></image>
+
           </view>
           <view class="banner_Item">
             <image src="/image/jiansheyinhang.jpg" class="yinhangka"></image>
+
           </view>
 
         </view>
       </scroll-view>
     </view>
+
   </view>
   <!-- 添加银行卡 -->
   <view class="add_yinhang" bindtap="add_yinhang">
@@ -43,33 +35,36 @@
     <text class="add_text2">充值</text>
   </view>
   <!-- 消费明细-->
-   <view wx:if="{{date1.length==0}}">
-  <view class="xiaofei">
-    <view class="bianli">
-      <view class="mingxi" wx:for="{{date1}}" wx:key="">
-        <image src="/image/rili.png" class="tubao_img"></image>
-        <text class="date">{{item.j_time}}</text>
-        <text class="jing">-${{item.j_money}}</text>
-      </view>
-      
-    </view>
-  </view>
-  </view>
-
-    <view wx:if="{{date1.length!=0}}">
   <view class="xiaofei">
     <text class="text1">消费明细</text>
     <view class="bianli">
-      <view class="mingxi" wx:for="{{date1}}" wx:key="">
+      <view class="mingxi">
         <image src="/image/rili.png" class="tubao_img"></image>
-        <text class="date">{{item.j_time}}</text>
-        <text class="jing">-${{item.j_money}}</text>
+        <text class="date">2019-11-07 11:45:20</text>
+        <text class="jing">-$170</text>
       </view>
-      
+      <view class="mingxi">
+        <image src="/image/rili.png" class="tubao_img"></image>
+        <text class="date">2019-11-07 11:45:20</text>
+        <text class="jing">-$1700</text>
+      </view>
+      <view class="mingxi">
+        <image src="/image/rili.png" class="tubao_img"></image>
+        <text class="date">2019-11-07 11:45:20</text>
+        <text class="jing">-$170</text>
+      </view>
+      <view class="mingxi">
+        <image src="/image/rili.png" class="tubao_img"></image>
+        <text class="date">2019-11-07 11:45:20</text>
+        <text class="jing">-$170</text>
+      </view>
+      <view class="mingxi">
+        <image src="/image/rili.png" class="tubao_img"></image>
+        <text class="date">2019-11-07 11:45:20</text>
+        <text class="jing">-$170</text>
+      </view>
     </view>
   </view>
-  </view>
-
 
   </view>
   <!-- 按钮 -->

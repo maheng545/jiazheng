@@ -2,14 +2,13 @@
   <text class="text1">请绑定持卡本人的银行卡</text>
   <view class="shuru">
   <view class="name_view">
-  <text class="text2">银行卡</text>
-    <input type="text" placeholder="名称"  bindinput="getName"  class="name_inpuut"></input>
+  <text class="text2">持卡人</text>
+    <input type="text" placeholder="姓名" class="name_inpuut"></input>
     </view>
-   
     <view class="kahao_view">
     <text class="text3">卡号</text>
-    <input type="text" placeholder="卡号" bindinput="getNumber" class="kahao_inpuut"></input>
+    <input type="text" placeholder="卡号"class="kahao_inpuut"></input>
     </view>
   </view>
-  <button class="btn" bindtap="bingding">绑定</button>
+  <button class="btn">绑定</button>
 </view>

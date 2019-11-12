@@ -1,11 +1,15 @@
 <view class="zhu">
   <view class="kabao">
-    <view class="kamoban" wx:for="{{date}}" wx:key="">
+    <view class="kamoban">
     <image src="/image/yinhangbiaozhi2.png" class="img"></image>
       <text class="text1">卡号:</text>
-      <text class="text2">{{item.b_number}}</text>
+      <text class="text2">1236 8596 5213 6533</text>
     </view>
-  
+   <view class="kamoban">
+    <image src="/image/yinhangbiaozhi2.png" class="img"></image>
+      <text class="text1">卡号:</text>
+      <text class="text2">1236 8596 5213 6533</text>
+    </view>
   
 
   </view>
