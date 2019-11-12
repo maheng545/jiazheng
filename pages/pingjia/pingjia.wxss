@@ -33,7 +33,7 @@ border-radius:20rpx;
 .text_biaoti{
  color:rgba(128, 128, 128, 0.74);
    position: absolute;
- margin-left:60rpx; 
+ margin-left:75rpx; 
   margin-top: 230rpx;
   font-size: 28rpx;
 }

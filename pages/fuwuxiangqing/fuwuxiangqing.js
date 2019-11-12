@@ -139,7 +139,6 @@ Page({
         dataType: 'json',
         responseType: 'text',
         success(res) {
-          // console.log(res.data.data[0].id)
           var id = res.data.data[0].id
            wx.request({
              url: 'http://localhost:3000/per/add_ruzhu',

@@ -1,14 +1,10 @@
 <view>
 <!-- 下拉 -->
 <view class="toubu">
-<text class="text1">选择银行卡</text>
+<text class="text1">当前银行卡</text>
 <view class='select_box'>
   <view class='select' catchtap='selectTap'>
-    <text class='select_text'>{{selectData[index]}}</text>
-    <image class='select_img {{show&&"select_img_rotate"}}' src='/image/zheng.png'></image>
-  </view>
-  <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
-    <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    <text class='select_text'>{{b_name}}</text>
   </view>
 </view>
  </view>
@@ -18,7 +14,7 @@
  <!-- 输入框 -->
  <view class="shuru_view">
  <text class="text3">￥</text>
- <input type="text" class="shuru_input"></input>
+ <input type="text" class="shuru_input" bindinput="getMoney"></input>
  </view>
  </view>
    <button class="btn" bindtap="showInputLayer">充值</button>
@@ -28,8 +24,6 @@
 <view class="yincang" wx:if='{{showyincang}}'>
   <image src="/image/cuohao.png" class="cuo_img" bindtap="guanbi"></image>
   <text class="mima_text">请输入支付密码</text>
-  <text class="text4">充值到零钱</text>
-  <text class="text5">￥5100</text>
   <text class="text6"></text>
 
 </view>

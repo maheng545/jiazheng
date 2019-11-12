@@ -8,7 +8,6 @@ Page({
     show: false,//控制下拉列表的显示隐藏，false隐藏、true显示
     selectData: ['1', '2', '3', '4', '5', '6'],//下拉列表的数据
     index: 0//选择的下拉列表下标
-
   },
   // 点击下拉显示框
   selectTap() {
@@ -16,32 +15,25 @@ Page({
       show: !this.data.show
     });
   },
-  // 点击下拉列表
-  optionTap(e) {
-    let Index = e.currentTarget.dataset.index;//获取点击的下拉列表的下标
+  getMoney: function (e) {
     this.setData({
-      index: Index,
-      show: !this.data.show
-    });
+      money: e.detail.value
+    })
   },
   onLoad: function (options) {
-
+    var that=this;
+    that.setData({
+      b_name:wx.getStorageSync("b_name"),
+    
+    })
   },
-  /**
-  * 显示支付密码输入层
-  */
-  showInputLayer: function () {
-    this.setData({
-      showPayPwdInput: true,
-      payFocus: true,
-      showyincang: true
-    });
-  },
+  
   /**
    * 隐藏支付密码输入层
    */
-  hidePayLayer: function () {
-    /**获取输入的密码**/
+  hidePayLayer: function (e) {
+    
+       /**获取输入的密码**/
     var val = this.data.pwdVal;
     console.log(val);
     /**在这调用支付接口**/
@@ -58,8 +50,9 @@ Page({
         image: '../../image/zfcg.png', //自定义图标的本地路径，image 的优先级高于 icon
         duration: 2000, //提示的延迟时间，单位毫秒，默认：1500
       })
-     
+
     });
+    
 
   },
   /**
@@ -79,7 +72,36 @@ Page({
     });
 
     if (e.detail.value.length >= 6) {
-      this.hidePayLayer();
+      var that = this;
+      wx.request({
+        url: 'http://localhost:3000/per/updateMoney',
+        method: 'post',
+        data: {
+          money: this.data.money,
+          b_id: wx.getStorageSync("b_id")
+        },
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success(res) {
+
+          wx.showToast({
+            title: '充值成功', //标题
+            icon: 'loading', //图标，支持"success"、"loading"
+            image: '../../image/zfcg.png', //自定义图标的本地路径，image 的优先级高于 icon
+            duration: 2000, //提示的延迟时间，单位毫秒，默认：1500
+          })
+          wx.navigateTo({
+            url: '../zhifu/zhifu',
+          })
+        },
+        fail: function (err) {
+          console.log(err.data);
+        },
+        complete: function () { }
+      })
+
+
     }
   },
   guanbi: function () {
@@ -88,6 +110,34 @@ Page({
       payFocus: false,
       showyincang: false
     })
+  }, 
+  /**
+  * 显示支付密码输入层
+  */
+  // showInputLayer: function () {
+  //   this.setData({
+  //     showPayPwdInput: true,
+  //     payFocus: true,          
+  //     showyincang: true
+  //   });
+  // },
+  showInputLayer:function(e){
+    var that=this;
+    var money = this.data.money;
+    if(money ==null) {
+      wx.showModal({
+        title: '温馨提示',
+        content: '请填写正确金额!', 
+      })
+} else {
+      that.setData({
+        showPayPwdInput: true,
+        payFocus: true,
+        showyincang: true
+      });
+      
+   }
+
   }
 
 

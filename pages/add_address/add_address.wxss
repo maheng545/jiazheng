@@ -38,6 +38,8 @@ radio {
   left: 120rpx;
   margin-top: 20rpx;
   font-size: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
 }
 
 .lianxi_phone {

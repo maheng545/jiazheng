@@ -50,19 +50,18 @@ Page({
         'content-type': 'application/x-www-form-urlencoded'
       },
       success(res) {
+        if (getCurrentPages().length != 0) {
+          //刷新当前页面的数据
+          getCurrentPages()[getCurrentPages().length - 1].onLoad()
+        }
         wx.showToast({
           title: '删除成功',
           icon: 'success',
           duration: 1000
 
         })
-        if (getCurrentPages().length != 0) {
-          //刷新当前页面的数据
-          getCurrentPages()[getCurrentPages().length - 1].onLoad()
-        }
-        // that.setData({
-        //   date: res.data.data
-        // })
+        
+ 
       },
       fail: function(err) {
         console.log(err.data);
@@ -70,5 +69,51 @@ Page({
 
       complete: function() {}
     })
+  },
+  xuanAddress(e){
+    let a_id = e.currentTarget.dataset.a_id
+    wx.request({
+      url: 'http://localhost:3000/per/xuanAddress',
+      method: 'post',
+      data: {
+        a_id: e.currentTarget.dataset.a_id,
+        id: wx.getStorageSync('id')
+      },
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success(res) {   
+        wx.request({
+          url: 'http://localhost:3000/per/xuanAddress1',
+          method: 'post',
+          data: {
+            a_id: e.currentTarget.dataset.a_id,
+            id: wx.getStorageSync('id')
+          },
+          header: {
+            'content-type': 'application/x-www-form-urlencoded'
+          },
+          success(res) {
+            wx.navigateTo({
+              url: '../goumai/goumai',
+            })
+
+          },
+          fail: function (err) {
+            console.log(err.data);
+          },
+
+          complete: function () { }
+        })
+       
+
+      },
+      fail: function (err) {
+        console.log(err.data);
+      },
+
+      complete: function () { }
+    })
+
   }
 })
