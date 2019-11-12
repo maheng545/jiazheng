@@ -25,7 +25,10 @@
     "pages/qianbao/qianbao",
     "pages/tianjiayinhangka/tianjiayinhangka",
     "pages/bangyinhangka/bangyinhangka",
-    "pages/chongzhi/chongzhi"
+    "pages/chongzhi/chongzhi",
+    "pages/xiaoxi/xiaoxi",
+    "pages/shengexiangqing/shengexiangqing",
+    "pages/zhuce/zhuce"
     
 
   ],

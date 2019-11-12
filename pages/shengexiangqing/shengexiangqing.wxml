@@ -1,0 +1,14 @@
+<view class="tongguo" wx:if="{{tongguo}}" wx:for="{{data}}" wx:key="">
+  <image src="/image/shenheguo.png" class="img1"></image>
+  <text class="text1">恭喜您入住{{item.r_xiangmu}}服务审核成功</text>
+  <button class="btn">完善个人信息并开始服务</button>
+</view>
+
+<view class="tongguo" wx:if="{{butongguo}}" wx:for="{{data}}" wx:key="">
+  <image src="/image/shenhebutongguo.png" class="img2"></image>
+  <text class="text2">您的入住{{item.r_xiangmu}}审核审核不通过</text>
+  <view wx:for="{{data2}}" wx:key="">
+    <text class="text3">(原因：{{item.b_liyou}})</text>
+  </view>
+  <button class="btn2">返回首页</button>
+</view>

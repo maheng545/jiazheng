@@ -1,0 +1,66 @@
+.zhu {
+  height: 1000rpx;
+  background: rgba(128, 128, 128, 0.103);
+}
+
+.dingdan {
+  background: white;
+  height: 100rpx;
+  border-top: 1rpx solid gray;
+  border-bottom: 1rpx solid gray;
+  margin-top: 20rpx;
+}
+
+.img1 {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+}
+
+.text1 {
+  position: absolute;
+  margin-left: 130rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+
+.text2 {
+  position: absolute;
+  margin-left: 620rpx;
+  margin-top: 30rpx;
+  font-size: 27rpx;
+  color: blue;
+}
+
+.kong{
+  height: 600rpx;
+  width: 100%;
+  position: absolute;
+  margin-top: 200rpx;
+}
+.img2{
+  width: 250rpx;
+  height: 250rpx;
+   position: absolute;
+  margin-top: 20rpx;
+    margin-left: 280rpx;
+}
+.text3{
+  font-size: 35rpx;
+    position: absolute;
+  margin-top: 350rpx;
+    margin-left: 220rpx;
+    color:rgba(128, 128, 128, 0.568);
+}
+.btn{
+  width: 220rpx;
+  height: 80rpx;
+   position: absolute;
+  margin-top: 520rpx;
+    margin-left: 280rpx;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20ch;
+}

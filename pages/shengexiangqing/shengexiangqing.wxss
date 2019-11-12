@@ -1,0 +1,50 @@
+.tongguo {
+  height: 1000rpx;
+}
+
+.img1 {
+  width: 100%;
+  height: 550rpx;
+}
+
+.text1 {
+  font-size: 30rpx;
+  margin-left: 180rpx;
+  line-height: 150rpx;
+  background: white;
+}
+
+.btn {
+  width: 80%;
+  height: 80rpx;
+  margin-top: 200rpx;
+  color: white;
+  background: rgb(129, 207, 11);
+}
+
+.img2 {
+  width: 100%;
+  height: 600rpx;
+}
+
+.btn2 {
+  width: 80%;
+  height: 80rpx;
+  margin-top: 150rpx;
+  color: white;
+  background: rgba(255, 0, 0, 0.671);
+}
+
+.text2 {
+  font-size: 30rpx;
+ line-height: 150rpx;
+  margin-left: 200rpx;
+  background: white;
+}
+
+.text3 {
+  font-size: 25rpx;
+  margin-left: 190rpx;
+ 
+  color:gray;
+}
