@@ -15,7 +15,8 @@ Page({
     id: '',
     p_name: '',
     p_price: '',
-    count:''
+    count: '',
+    a_address: ''
 
   },
 
@@ -64,15 +65,26 @@ Page({
         'content-type': 'application/x-www-form-urlencoded'
       },
       success(res) {
-        that.setData({
-          date1: res.data.data,
-        })
-        let a_phone = res.data.data[0].a_phone
-        let a_address = res.data.data[0].a_address
-        let a_xiangxi = res.data.data[0].a_xiangxi
-        let aa_address = a_address + a_xiangxi
-        wx.setStorageSync('a_phone', a_phone);
-        wx.setStorageSync('aa_address', aa_address);
+
+
+        if (res.data.data == "") {
+          that.setData({
+            date1: res.data.data,
+          })
+        } else {
+          that.setData({
+            date1: res.data.data,
+          })
+          let a_phone = res.data.data[0].a_phone
+          let a_address = res.data.data[0].a_address
+          let a_name = res.data.data[0].a_name
+
+          let a_xiangxi = res.data.data[0].a_xiangxi
+          let aa_address = a_address + a_xiangxi
+          wx.setStorageSync('a_phone', a_phone);
+          wx.setStorageSync('a_name', a_name);
+          wx.setStorageSync('aa_address', aa_address);
+        }
       },
       fail: function(err) {
         console.log(err.data);
@@ -106,13 +118,19 @@ Page({
     })
 
   },
+  next2: function(e) {
+
+    wx.navigateTo({
+      url: '../address/address',
+    })
+
+  },
   next: function(e) {
     var p_name = wx.getStorageSync('p_name');
     var myDate = new Date();
     var count = this.data.count;
     wx.setStorageSync("count", count)
     var p_price = wx.getStorageSync('p_price');
-    console.log(p_price)
     var o_total = count * p_price;
     wx.setStorageSync('o_total', o_total);
     let o_time = this.data.o_time;
@@ -126,8 +144,7 @@ Page({
         title: '温馨提示',
         content: '请填写服务面积!',
       })
-    }
-    else  if (count < 10 || count > 80) {
+    } else if (count < 10 || count > 80) {
       wx.showModal({
         title: '温馨提示',
         content: '服务面积不再限定范围!',
@@ -152,7 +169,8 @@ Page({
           o_count: this.data.count,
           o_total: o_total,
           id: wx.getStorageSync('id'),
-          date2: util.formatTime(new Date())
+          date2: util.formatTime(new Date()),
+          a_name: wx.getStorageSync('a_name'),
         },
         header: {
           'content-type': 'application/x-www-form-urlencoded'

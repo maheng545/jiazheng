@@ -22,8 +22,7 @@
           <text class="o_address">{{item.o_address}}</text>
         </view>
         <view class="weibu">
-
-          <button class="pingjia">评价</button>
+             <button class="pingjia" bindtap="goPingjia" data-o_id="{{item.o_id}}" data-c_id="{{item.c_id}}">评价</button>
         </view>
       </view>
       <!-- 遍历未付款 -->
@@ -76,6 +75,9 @@
         <view class="shenti">
           <image src="/image/location.png" class="img3"></image>
           <text class="o_address">{{item.o_address}}</text>
+        </view>
+        <view class="weibu">
+          <button class="quxaio" bindtap="tuikuan" data-id="{{item.id}}" data-o_id="{{item.o_id}}" data-o_total="{{item.o_total}}">退款</button>
         </view>
       </view>
       <!-- 遍历已取消 -->

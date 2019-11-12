@@ -1,8 +1,8 @@
 <view class="address_view">
   <!-- 地址信息 -->
-  <view class="address" wx:for="{{date}}" wx:key="">
+  <view class="address" wx:for="{{date}}" wx:key="" >
     <text class="address_text_dizhi">{{item.a_address}}{{item.a_xiangxi}}</text>
-    <text class="address_text_name">{{item.a_name}}{{item.a_phone}}</text>
+    <text class="address_text_name" data-a_id="{{item.a_id}}" bindtap="xuanAddress">{{item.a_name}}{{item.a_phone}}</text>
     <view class="image1">
       <image src="/image/shanchu.png" data-a_id="{{item.a_id}}" bindtap="deleteImage"></image>
     </view>

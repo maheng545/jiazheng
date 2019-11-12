@@ -22,7 +22,6 @@ Page({
       success(res) {
         // console.log(res.data.data[0].id)
         var id = res.data.data[0].id
-
         //查询待支付
         wx.request({
             url: "http://localhost:3000/per/select_orders_daizhifu/" + id,
@@ -38,7 +37,9 @@ Page({
               })
 
             },
-            fail: function(err) {},
+            fail: function(err) {
+              console.log(err.data);
+            },
 
             complete: function() {}
           }),
@@ -56,7 +57,6 @@ Page({
               })
             },
             fail: function(err) {},
-
             complete: function() {}
           }),
           //查询已取消
@@ -117,7 +117,10 @@ Page({
   },
   quxiao_btn: function(e) {
     let o_id = e.currentTarget.dataset.o_id
+    
+
     console.log("当前订单编号是:" + o_id)
+
     wx.request({
       url: 'http://localhost:3000/per/deleteOrdersById/' + o_id,
       method: 'post',
@@ -130,7 +133,6 @@ Page({
           title: '删除成功',
           icon: 'success',
           duration: 1000
-
         })
         if (getCurrentPages().length != 0) {
           //刷新当前页面的数据
@@ -143,9 +145,88 @@ Page({
       fail: function(err) {
         console.log(err.data);
       },
-
       complete: function() {}
     })
   }
+  , goPingjia(e){
+    let o_id1 = e.currentTarget.dataset.o_id 
+    let c_id = e.currentTarget.dataset.c_id
+    
+    wx.setStorageSync("o_id1", o_id1)
+    wx.setStorageSync("c_id", c_id)
+   wx.navigateTo({
+     url: '../pingjia/pingjia',
+   })
+  },
+  tuikuan: function (e) {
+    let o_id = e.currentTarget.dataset.o_id
+    let o_total1 = e.currentTarget.dataset.o_total
+    let id = wx.getStorageSync("id")
+    var that=this;
+wx.setStorageSync("o_total1",o_total1)
+    wx.request({
+      url: 'http://localhost:3000/per/tuikuanOrdersById/' + o_id,
+      method: 'post',
+      data: {},
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success(res) {
+        wx.showToast({
+          title: '退款成功',
+          icon: 'success',
+          duration: 1000
+        })
+        if (getCurrentPages().length != 0) {
+          //刷新当前页面的数据
+          getCurrentPages()[getCurrentPages().length - 1].onLoad()
+        }
+        wx.request({
+          url: 'http://localhost:3000/per/selectBank/' + id,
+          method: 'GET',
+          data: {},
+          header: {
+            'content-type': 'application/x-www-form-urlencoded'
+          },
+          success(res) {
+            that.setData({
+              date: res.data.data,
+            })
+            var b_id = res.data.data[0].b_id;
+            wx.setStorageSync("b_id", b_id)
+            wx.request({
+              url: 'http://localhost:3000/per/tuikuanAddBank',
+              method: 'post',
+              data: {
+                b_id: wx.getStorageSync("b_id"),
+                o_total1: wx.getStorageSync("o_total1")
 
+              },
+              header: {
+                'content-type': 'application/x-www-form-urlencoded'
+              },
+              success(res) {
+
+              },
+              fail: function (err) { },
+              complete: function () { }
+            })
+          },
+          fail: function (err) {
+            console.log(err.data);
+          },
+
+          complete: function () { }
+        })
+      
+          
+      
+ 
+      },
+      fail: function (err) {
+        console.log(err.data);
+      },
+      complete: function () { }
+    })
+  }
 })
